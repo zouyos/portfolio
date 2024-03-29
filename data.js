@@ -38,11 +38,7 @@ export const projects = [
     name: "Poke'Decks",
     short_description: "Pokemon fan game developed with React and Custom Hooks",
     description: "",
-    techs: [
-      { icon: react_icon, name: "React" },
-      { name: "Custom hook « useLocalStorage »" },
-      { name: "Custom hook « useScrollPosition »" },
-    ],
+    techs: [{ icon: react_icon, name: "React" }, { name: "Custom Hooks" }],
     image: pokedecks,
     visit_link: "https://poke-decks-game.vercel.app/",
     github_link: "https://github.com/zouyos/poke-decks",

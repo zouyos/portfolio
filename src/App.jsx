@@ -20,7 +20,7 @@ function App() {
         <div className={`col-sm-12 col-md-3 ${style.side_bar}`}>
           <Avatar img={avatar} title="Zouyos" />
           <div className={style.presentation}>
-            <h2>FullStack Developer</h2>
+            <h1>FullStack Developer</h1>
             <hr />
             <div className="para my-4">
               <p>Titulaire d’un Titre Professionnel de niveau 6 (bac+4)</p>
@@ -85,12 +85,12 @@ function App() {
                     return (
                       <div
                         key={tech.name + i}
-                        className="d-flex align-items-center"
+                        className="d-flex align-items-center flex-wrap"
                       >
                         {tech.icon && (
                           <img src={tech.icon} className={style.icon} />
                         )}
-                        <span className="me-2">
+                        <span className="me-1 text-wrap">
                           {i !== selectedProject.techs.length - 1
                             ? tech.name + " / "
                             : tech.name}
