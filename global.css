@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "HURTMOLD_", sans-serif;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.subtitle {
+  color: white;
+  font-family: "HURTMOLD_", sans-serif;
+}
+
+.para {
+  color: #89ddff;
+  font-family: "Roboto", sans-serif;
+}
+
+.italic {
+  font-style: italic;
+}
