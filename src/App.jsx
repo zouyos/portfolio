@@ -35,19 +35,19 @@ function App() {
             </div>
             <hr />
             <div className="d-flex flex-column justify-content-center align-items-center">
-              <p className="fs-4 my-2">Social</p>
-              <div className="d-flex justify-content-center align-items-center">
+              <p className="fs-4 mb-2">Social</p>
+              <div className="d-flex justify-content-center align-items-center mt-2 mb-3">
                 <a
                   href="https://www.linkedin.com/in/hamza-benketaf/"
                   target="__blank"
-                  className="m-2"
+                  className="mx-2"
                 >
                   <img src={linkedin_icon} className={style.icon} />
                 </a>
                 <a
                   href="https://github.com/zouyos"
                   target="__blank"
-                  className="m-2"
+                  className="mx-2"
                 >
                   <img src={github_icon} className={style.icon} />
                 </a>
@@ -65,7 +65,10 @@ function App() {
             <div className="fs-4">Description</div>
             <hr />
             {selectedProject === null ? (
-              <div className="para text-center my-5 italic">
+              <div
+                className="para text-center italic"
+                style={{ marginTop: "75px" }}
+              >
                 Cliquez sur un projet pour afficher la description
               </div>
             ) : (
