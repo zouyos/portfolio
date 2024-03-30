@@ -23,12 +23,11 @@ function App() {
             <h1>FullStack Developer</h1>
             <hr />
             <div className="para my-4">
-              <p>Titulaire d’un Titre Professionnel de niveau 6 (bac+4)</p>
+              <p>bac+4</p>
               <p>
                 Plusieurs projets réalisés avec des frameworks JavaScript
                 (React, Vue, Node), PHP (Symfony) et Java (Spring, Spring Boot)
               </p>
-              <p>Préférence pour les stacks front (React / Vue.js)</p>
               <p>
                 Maîtrise de Redux et des hooks avancés de React / Tests
                 unitaires avec Jest
@@ -75,7 +74,7 @@ function App() {
                   <span className="subtitle fs-5">Name of project: </span>
                   {selectedProject.name}
                 </p>
-                <pre className="para">
+                <pre className="para" style={{ fontSize: "16px" }}>
                   <span className="subtitle fs-5">Description: </span>
                   {selectedProject.description}
                 </pre>

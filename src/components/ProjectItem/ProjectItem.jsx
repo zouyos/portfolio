@@ -16,7 +16,7 @@ const ProjectItem = ({ project, onClick }) => {
       <div className="d-flex justify-content-center mb-2">
         <img src={project.image} className={style.img} />
       </div>
-      <h3 className="text-white">{project.name}</h3>
+      <h4 className="text-white">{project.name}</h4>
       <p className="para">{project.short_description}</p>
       <a href={project.visit_link} target="__blank">
         <Button variant="primary" className="me-2">
