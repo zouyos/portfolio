@@ -6,10 +6,6 @@
   background-color: #192227;
   padding: 20px;
   border-right: 3px solid #263238;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .presentation {

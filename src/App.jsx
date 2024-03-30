@@ -35,7 +35,7 @@ function App() {
             </div>
             <hr />
             <div className="d-flex flex-column justify-content-center align-items-center">
-              <p className="fs-5 my-3">Social</p>
+              <p className="fs-4 my-2">Social</p>
               <div className="d-flex justify-content-center align-items-center">
                 <a
                   href="https://www.linkedin.com/in/hamza-benketaf/"
