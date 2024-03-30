@@ -1,5 +1,8 @@
 .container {
   display: flex;
   width: 100vw - 513px;
+  overflow-x: hidden;
+}
+.container:hover {
   overflow-x: scroll;
 }

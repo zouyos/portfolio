@@ -22,7 +22,8 @@ export const projects = [
     id: 2,
     name: "ISpent",
     short_description: "Expense tracker developed with React and Redux library",
-    description: "",
+    description:
+      "This application allows the user to set an income and track their expenses within an intuitive interface.\nIt uses Redux library that helps centralizing the application's state and logic making it easy to test or debug.\nThe extension « Redux Persist » allows state persitence",
     techs: [
       { icon: react_icon, name: "React" },
       { icon: redux_icon, name: "Redux" },
@@ -37,7 +38,8 @@ export const projects = [
     id: 3,
     name: "Poke'Decks",
     short_description: "Pokemon fan game developed with React and Custom Hooks",
-    description: "",
+    description:
+      "A Pokemon mini game developed with React.\nThe application uses a public API and consist in a random lottery with different ratios on items.\nIt uses custom hooks like « useLocalStorage » and « useScrollPosition ».",
     techs: [{ icon: react_icon, name: "React" }, { name: "Custom Hooks" }],
     image: pokedecks,
     visit_link: "https://poke-decks-game.vercel.app/",

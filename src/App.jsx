@@ -23,7 +23,7 @@ function App() {
             <h1>FullStack Developer</h1>
             <hr />
             <div className="para my-4">
-              <p>bac+4</p>
+              <p>Bac+4 / Bachelor Degree</p>
               <p>
                 Plusieurs projets réalisés avec des frameworks JavaScript
                 (React, Vue, Node), PHP (Symfony) et Java (Spring, Spring Boot)
