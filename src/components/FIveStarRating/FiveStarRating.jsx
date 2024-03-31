@@ -15,7 +15,7 @@ export const FiveStarRating = ({ techRatings }) => {
         }
 
         if (hasStarHalf) {
-          starList.push(<StarHalf size={14} />);
+          starList.push(<StarHalf size={14} key={"emptyStar"} />);
         }
 
         for (let i = 0; i < emptyStarCount; i++) {
@@ -30,7 +30,7 @@ export const FiveStarRating = ({ techRatings }) => {
             >
               {techRating.name}{" "}
             </span>
-            <span>{starList}</span>
+            <span className="text-start">{starList}</span>
           </div>
         );
       })}

@@ -75,7 +75,7 @@ const techRatings = [
     rating: 2.5,
   },
   {
-    id: 5,
+    id: 6,
     name: "PHP Symfony Java SpringBoot",
     rating: 3,
   },

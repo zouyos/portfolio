@@ -71,7 +71,7 @@ function App() {
                   <span className="subtitle fs-5">Name of project: </span>
                   {selectedProject.name}
                 </p>
-                <pre className="para" style={{ fontSize: "16px" }}>
+                <pre className="para text-wrap" style={{ fontSize: "16px" }}>
                   <span className="subtitle fs-5">Description: </span>
                   {selectedProject.description}
                 </pre>
@@ -79,7 +79,7 @@ function App() {
                   <span className="subtitle fs-5 me-2">Developed with: </span>
                   {selectedProject.techs.map((tech, i) => {
                     return (
-                      <div
+                      <span
                         key={tech.name + i}
                         className="d-flex align-items-center flex-wrap"
                       >
@@ -91,7 +91,7 @@ function App() {
                             ? tech.name + " / "
                             : tech.name}
                         </span>
-                      </div>
+                      </span>
                     );
                   })}
                 </p>
