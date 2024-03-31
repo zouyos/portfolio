@@ -4,7 +4,7 @@ import pokedecks from "./src/assets/img/pokedecks.png";
 import react_icon from "./src/assets/img/react-icon.png";
 import redux_icon from "./src/assets/img/redux-icon.png";
 
-export const projects = [
+const projects = [
   {
     id: 1,
     name: "Watowatch",
@@ -47,3 +47,38 @@ export const projects = [
     created_at: "feb. 2024",
   },
 ];
+
+const techRatings = [
+  {
+    id: 1,
+    name: "HTML CSS SQL",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "JavaScript Bootstrap Sass",
+    rating: 4,
+  },
+  {
+    id: 3,
+    name: "React",
+    rating: 4.5,
+  },
+  {
+    id: 4,
+    name: "Vue Redux Jest",
+    rating: 3.5,
+  },
+  {
+    id: 5,
+    name: "Node Express",
+    rating: 2.5,
+  },
+  {
+    id: 5,
+    name: "PHP Symfony Java SpringBoot",
+    rating: 3,
+  },
+];
+
+export { projects, techRatings };

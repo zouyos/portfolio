@@ -1,11 +1,13 @@
 import Avatar from "./components/Avatar/Avatar";
 import style from "./style.module.css";
 import avatar from "./assets/img/avatar.png";
+import avatar_glow from "./assets/img/avatar-glow.png";
 import ProjectList from "./components/ProjectList/ProjectList";
-import { projects } from "../data";
+import { projects, techRatings } from "../data";
 import { useState } from "react";
 import linkedin_icon from "./assets/img/linkedin-icon.png";
 import github_icon from "./assets/img/github-icon-white.png";
+import { FiveStarRating } from "./components/FIveStarRating/FiveStarRating";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -18,20 +20,12 @@ function App() {
     <div className={`container-fluid ${style.main_container}`}>
       <div className="row h-100">
         <div className={`col-sm-12 col-md-3 ${style.side_bar}`}>
-          <Avatar img={avatar} title="Zouyos" />
+          <Avatar img={avatar_glow} title="Zouyos" />
           <div className={style.presentation}>
-            <h1>FullStack Developer</h1>
+            <h1 style={{ fontSize: "34px" }}>FullStack Developer</h1>
             <hr />
-            <div className="para my-4">
-              <p>Bac+4 / Bachelor Degree</p>
-              <p>
-                Plusieurs projets réalisés avec des frameworks JavaScript
-                (React, Vue, Node), PHP (Symfony) et Java (Spring, Spring Boot)
-              </p>
-              <p>
-                Maîtrise de Redux et des hooks avancés de React / Tests
-                unitaires avec Jest
-              </p>
+            <div>
+              <FiveStarRating techRatings={techRatings} />
             </div>
             <hr />
             <div className="d-flex flex-column justify-content-center align-items-center">
@@ -82,7 +76,7 @@ function App() {
                   {selectedProject.description}
                 </pre>
                 <p className="para d-flex">
-                  <span className="subtitle fs-5 me-2">Developped with: </span>
+                  <span className="subtitle fs-5 me-2">Developed with: </span>
                   {selectedProject.techs.map((tech, i) => {
                     return (
                       <div

@@ -1,0 +1,10 @@
+.rating_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 24px;
+  flex-wrap: wrap;
+}
+
+.label {
+  margin-top: 2px;
+}
