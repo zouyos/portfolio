@@ -59,7 +59,7 @@ function App() {
             <div className="fs-4">Description</div>
             <hr />
             {selectedProject === null ? (
-              <div className="para text-center italic mt-5">
+              <div className="para text-center italic mt-4">
                 Cliquez sur un projet pour afficher la description
               </div>
             ) : (
