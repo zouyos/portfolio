@@ -57,7 +57,7 @@ const techRatings = [
   {
     id: 2,
     name: "JavaScript Bootstrap Sass",
-    rating: 4,
+    rating: 4.5,
   },
   {
     id: 3,
