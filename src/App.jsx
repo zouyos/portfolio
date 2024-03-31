@@ -59,10 +59,7 @@ function App() {
             <div className="fs-4">Description</div>
             <hr />
             {selectedProject === null ? (
-              <div
-                className="para text-center italic"
-                style={{ marginTop: "75px" }}
-              >
+              <div className="para text-center italic mt-5">
                 Cliquez sur un projet pour afficher la description
               </div>
             ) : (

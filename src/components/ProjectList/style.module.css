@@ -4,5 +4,5 @@
   overflow-x: hidden;
 }
 .container:hover {
-  overflow-x: scroll;
+  overflow-x: overlay;
 }
