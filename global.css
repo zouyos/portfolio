@@ -3,7 +3,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  color: white;
   font-family: "HURTMOLD_", sans-serif;
 }
 
@@ -16,13 +15,7 @@ body {
   border-radius: 10px;
 }
 
-.subtitle {
-  color: white;
-  font-family: "HURTMOLD_", sans-serif;
-}
-
 .para {
-  color: #89ddff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }

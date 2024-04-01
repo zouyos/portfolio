@@ -1,7 +1,12 @@
+import { useContext } from "react";
 import style from "./style.module.css";
 import { StarFill, StarHalf, Star as EmptyStar } from "react-bootstrap-icons";
+import { ThemeModeContext } from "../../contexts/ThemeModeContext";
+import { THEME } from "../../../data";
 
 export const FiveStarRating = ({ techRatings }) => {
+  const { themeMode } = useContext(ThemeModeContext);
+
   return (
     <div className={style.container}>
       {techRatings.map((techRating) => {
@@ -26,11 +31,19 @@ export const FiveStarRating = ({ techRatings }) => {
           <div key={techRating.id} className={style.rating_container}>
             <span
               className={style.label}
-              style={{ color: "#89ddff", fontWeight: "bold" }}
+              style={{
+                color: THEME[themeMode].secondaryColor,
+                fontWeight: "bold",
+              }}
             >
               {techRating.name}{" "}
             </span>
-            <span className="text-start">{starList}</span>
+            <span
+              className="text-start"
+              style={{ color: THEME[themeMode].primaryColor }}
+            >
+              {starList}
+            </span>
           </div>
         );
       })}

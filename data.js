@@ -3,6 +3,10 @@ import ispent from "./src/assets/img/ispent.png";
 import pokedecks from "./src/assets/img/pokedecks.png";
 import react_icon from "./src/assets/img/react-icon.png";
 import redux_icon from "./src/assets/img/redux-icon.png";
+import avatar from "./src/assets/img/avatar.png";
+import avatar_glow from "./src/assets/img/avatar-glow.png";
+import github_icon_white from "./src/assets/img/github-icon-white.png";
+import github_icon_dark from "./src/assets/img/github-icon-dark.png";
 
 const projects = [
   {
@@ -81,4 +85,27 @@ const techRatings = [
   },
 ];
 
-export { projects, techRatings };
+const THEME = {
+  dark: {
+    primaryColor: "white",
+    secondaryColor: "#89ddff",
+    primaryBackgroundColor: "#192227",
+    secondaryBackgroundColor: "#263238",
+    borderColor: "#263238",
+    borderHoverColor: "#89ddff",
+    avatar: avatar_glow,
+    github_icon: github_icon_white,
+  },
+  light: {
+    primaryColor: "#d35400",
+    secondaryColor: "#192227",
+    primaryBackgroundColor: "#a9cce3",
+    secondaryBackgroundColor: "#eaf2f8",
+    borderColor: "white",
+    borderHoverColor: "#e74c3c",
+    avatar: avatar,
+    github_icon: github_icon_dark,
+  },
+};
+
+export { projects, techRatings, THEME };

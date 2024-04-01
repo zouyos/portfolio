@@ -3,9 +3,8 @@
 }
 
 .side_bar {
-  background-color: #192227;
   padding: 20px;
-  border-right: 3px solid #263238;
+  border-right: 2px solid;
 }
 
 .presentation {
@@ -20,13 +19,11 @@
 }
 
 .cards_container {
-  background-color: #263238;
   flex: 2;
   padding: 20px;
 }
 
 .cards_description {
-  background-color: #192227;
   flex: 1;
   padding: 20px;
 }
