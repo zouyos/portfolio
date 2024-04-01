@@ -7,7 +7,7 @@ import linkedin_icon from "./assets/img/linkedin-icon.png";
 import { FiveStarRating } from "./components/FIveStarRating/FiveStarRating";
 import { ThemeModeContext } from "./contexts/ThemeModeContext";
 import { Form } from "react-bootstrap";
-import { Moon, MoonFill, Sun } from "react-bootstrap-icons";
+import { MoonFill, Sun } from "react-bootstrap-icons";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null);
