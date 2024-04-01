@@ -25,6 +25,7 @@ const ProjectItem = ({ project, onClick }) => {
       <h4
         style={{
           color: THEME[themeMode].primaryColor,
+          fontWeight: "semi-bold",
         }}
       >
         {project.name}
@@ -50,6 +51,7 @@ const ProjectItem = ({ project, onClick }) => {
         className="pb-0"
         style={{
           color: THEME[themeMode].primaryColor,
+          fontWeight: "semi-bold",
         }}
       >
         {project.created_at}

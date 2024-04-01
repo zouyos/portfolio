@@ -2,7 +2,7 @@ import Avatar from "./components/Avatar/Avatar";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
 import { THEME, projects, techRatings } from "../data";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import linkedin_icon from "./assets/img/linkedin-icon.png";
 import { FiveStarRating } from "./components/FIveStarRating/FiveStarRating";
 import { ThemeModeContext } from "./contexts/ThemeModeContext";
@@ -20,7 +20,19 @@ function App() {
 
   function toggleThemeMode() {
     setThemeMode(themeMode === "dark" ? "light" : "dark");
+    localStorage.setItem(
+      "themeMode",
+      JSON.stringify(themeMode === "dark" ? "light" : "dark")
+    );
   }
+
+  useEffect(() => {
+    setThemeMode(
+      localStorage.getItem("themeMode")
+        ? JSON.parse(localStorage.getItem("themeMode"))
+        : "dark"
+    );
+  }, [themeMode]);
 
   return (
     <ThemeModeContext.Provider value={{ themeMode, setThemeMode }}>
@@ -47,7 +59,8 @@ function App() {
                   type="switch"
                   id="theme-switch"
                   checked={themeMode === "dark"}
-                  onClick={toggleThemeMode}
+                  value={themeMode}
+                  onChange={toggleThemeMode}
                 />
                 <MoonFill className="ms-1" />
               </Form>
@@ -74,7 +87,7 @@ function App() {
               </div>
               <hr />
               <div className="d-flex flex-column justify-content-center align-items-center">
-                <p className="fs-4 mb-2">Social</p>
+                <p className="fs-4 mb-2 fw-bold">Social</p>
                 <div className="d-flex justify-content-center align-items-center mt-2 mb-3">
                   <a
                     href="https://www.linkedin.com/in/hamza-benketaf/"
@@ -104,7 +117,7 @@ function App() {
                 backgroundColor: THEME[themeMode].secondaryBackgroundColor,
               }}
             >
-              <div className="fs-4">Projects</div>
+              <div className="fs-4 fw-bold">Projects</div>
               <hr />
               <ProjectList projects={projects} onClick={handleProjectClick} />
             </div>
@@ -114,14 +127,14 @@ function App() {
                 backgroundColor: THEME[themeMode].primaryBackgroundColor,
               }}
             >
-              <div className="fs-4">Description</div>
+              <div className="fs-4 fw-bold">Description</div>
               <hr />
               {selectedProject === null ? (
                 <div
                   className="para text-center italic mt-4"
                   style={{ color: THEME[themeMode].secondaryColor }}
                 >
-                  Cliquez sur un projet pour afficher la description
+                  Click on a project to display information
                 </div>
               ) : (
                 <div className="my-3">
