@@ -75,13 +75,13 @@ const techRatings = [
   },
   {
     id: 5,
-    name: "Node Express",
-    rating: 2.5,
+    name: "PHP Symfony Java SpringBoot",
+    rating: 3,
   },
   {
     id: 6,
-    name: "PHP Symfony Java SpringBoot",
-    rating: 3,
+    name: "Node Express",
+    rating: 2.5,
   },
 ];
 
