@@ -38,9 +38,3 @@
   width: 30px;
   margin-right: 4px;
 }
-
-@media (max-width: 487px) {
-  .techName {
-    margin-top: 10px;
-  }
-}
