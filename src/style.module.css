@@ -7,6 +7,12 @@
   border-right: 2px solid;
 }
 
+@media (max-width: 767px) {
+  .side_bar {
+    border: none;
+  }
+}
+
 .presentation {
   text-align: center;
   color: white;
@@ -31,4 +37,10 @@
 .icon {
   width: 30px;
   margin-right: 4px;
+}
+
+@media (max-width: 487px) {
+  .techName {
+    margin-top: 10px;
+  }
 }

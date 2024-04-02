@@ -168,7 +168,11 @@ function App() {
                           {tech.icon && (
                             <img src={tech.icon} className={style.icon} />
                           )}
-                          <span className="para me-1 text-wrap">
+                          <span
+                            className={`para me-1 text-wrap ${
+                              !tech.icon && style.techName
+                            }`}
+                          >
                             {i !== selectedProject.techs.length - 1
                               ? tech.name + " / "
                               : tech.name}
