@@ -4,9 +4,14 @@ import style from "./style.module.css";
 const ProjectList = ({ projects, onClick }) => {
   return (
     <div className={style.container}>
-      {projects.map((project) => {
+      {projects.map((project, i) => {
         return (
-          <ProjectItem project={project} onClick={onClick} key={project.id} />
+          <div
+            key={project.id}
+            style={{ marginRight: i !== projects.length - 1 ? "30px" : 0 }}
+          >
+            <ProjectItem project={project} onClick={onClick} />
+          </div>
         );
       })}
     </div>

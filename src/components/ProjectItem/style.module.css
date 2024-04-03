@@ -1,12 +1,13 @@
 .card {
-  width: 24rem;
-  margin: 20px 20px 40px;
+  width: 21rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
   padding: 20px;
   position: relative;
   border-radius: 10px;
 }
 
 .img {
-  width: 24rem;
+  width: 21rem;
   padding: 0 1.3rem;
 }
