@@ -27,7 +27,7 @@ const projects = [
     name: "ISpent",
     short_description: "Expense tracker developed with React and Redux library",
     description:
-      "This application allows the user to set an income and track their expenses within an intuitive interface.\nIt uses Redux library that helps centralizing the application's state and logic making it easy to test or debug.\nThe extension « Redux Persist » allows state persitence",
+      "This application allows the user to set an income and track their expenses within an intuitive interface.\nIt uses Redux library that helps centralizing the application's state and logic making it easy to test or debug.\nRedux Persist provides state persitence",
     techs: [
       { icon: react_icon, name: "React" },
       { icon: redux_icon, name: "Redux" },

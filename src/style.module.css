@@ -25,13 +25,13 @@
 }
 
 .cards_container {
-  flex: 2;
   padding: 20px;
+  height: 100%;
 }
 
 .cards_description {
-  flex: 1;
   padding: 20px;
+  height: 100%;
 }
 
 .icon {
