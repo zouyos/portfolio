@@ -8,7 +8,10 @@ const ProjectList = ({ projects, onClick }) => {
         return (
           <div
             key={project.id}
-            style={{ marginRight: i !== projects.length - 1 ? "30px" : 0 }}
+            style={{
+              marginRight: i !== projects.length - 1 ? "30px" : "2px",
+              marginLeft: i === 0 && "2px",
+            }}
           >
             <ProjectItem project={project} onClick={onClick} />
           </div>
