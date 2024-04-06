@@ -60,26 +60,21 @@ const techRatings = [
   },
   {
     id: 2,
-    name: "JavaScript Bootstrap Sass",
+    name: "JavaScript React",
     rating: 4.5,
   },
   {
     id: 3,
-    name: "React",
-    rating: 4.5,
-  },
-  {
-    id: 4,
     name: "Vue Redux Jest",
     rating: 3.5,
   },
   {
-    id: 5,
+    id: 4,
     name: "PHP Symfony Java SpringBoot",
     rating: 3,
   },
   {
-    id: 6,
+    id: 5,
     name: "Node Express",
     rating: 2.5,
   },
