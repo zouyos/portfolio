@@ -55,17 +55,17 @@ const projects = [
 const techRatings = [
   {
     id: 1,
-    name: "HTML CSS SQL",
+    name: "HTML CSS JavaScript",
     rating: 5,
   },
   {
     id: 2,
-    name: "JavaScript React",
+    name: "React",
     rating: 4.5,
   },
   {
     id: 3,
-    name: "Vue Redux Jest",
+    name: "Redux Jest Vue",
     rating: 3.5,
   },
   {
