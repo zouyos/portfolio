@@ -73,14 +73,15 @@ function App() {
                 backgroundColor: THEME[themeMode].primaryBackgroundColor,
               }}
             >
-              <h1
+              <h2
                 style={{
-                  fontSize: "34px",
+                  fontSize: "28px",
                   color: THEME[themeMode].secondaryColor,
+                  marginBottom: "50px",
                 }}
               >
-                FullStack Developer
-              </h1>
+                FullStack JS Developer
+              </h2>
               <hr />
               <div>
                 <FiveStarRating techRatings={techRatings} />
