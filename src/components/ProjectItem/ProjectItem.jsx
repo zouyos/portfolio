@@ -21,14 +21,13 @@ const ProjectItem = ({ project, onClick }) => {
       <div className="d-flex justify-content-center mb-2">
         <img src={project.image} className={style.img} />
       </div>
-      <h4
+      <h3
         style={{
           color: THEME[themeMode].primaryColor,
-          fontWeight: "semi-bold",
         }}
       >
         {project.name}
-      </h4>
+      </h3>
       <p
         className="para"
         style={{

@@ -27,7 +27,7 @@ export const projects = [
     id: 1,
     name: "Watowatch",
     short_description:
-      "TV show advisor developed with React and using the TMDB API",
+      "TV show advisor developed with React and using TMDB API",
     description:
       "Based on « The Movie Database » API endpoint listing trending TV shows, this project is made with React.\nIt displays infos, rating, and recommendations based on the TV show selected.\nThis app also allows the user to search a TV show within TMDB. Unit tests are added with Jest and react-testing library",
     techs: [techs.react],
@@ -65,7 +65,7 @@ export const projects = [
     name: "Notomatic",
     short_description: "Note manager developed with React and Redux",
     description:
-      "This application allows the user to create and manage notes within an intuitive interface.\nIt uses Redux library and Redux Persist library for persitence",
+      "This application allows the user to create and manage notes within an intuitive interface.\nIt uses Redux library that helps centralizing the application's state and logic making it easy to test or debug.\nRedux Persist library provides state persitence.",
     techs: [techs.react, techs.redux, { name: "Redux Persist" }],
     image: notomatic,
     visit_link: "https://notomatic-note-manager.vercel.app/",

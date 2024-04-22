@@ -18,6 +18,11 @@
   color: white;
 }
 
+.description {
+  text-wrap: wrap;
+  font-size: 17px;
+}
+
 .workspace {
   display: flex;
   flex-direction: column;
