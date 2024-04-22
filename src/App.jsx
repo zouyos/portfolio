@@ -77,10 +77,10 @@ function App() {
                 style={{
                   fontSize: "28px",
                   color: THEME[themeMode].secondaryColor,
-                  marginBottom: "50px",
+                  marginBottom: "20px",
                 }}
               >
-                FullStack JS Developer
+                JS Developer
               </h2>
               <hr />
               <div>
