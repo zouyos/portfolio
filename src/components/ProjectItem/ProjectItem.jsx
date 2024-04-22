@@ -1,8 +1,7 @@
 import { Button } from "react-bootstrap";
 import style from "./style.module.css";
 import { useContext, useState } from "react";
-import { ThemeModeContext } from "../../contexts/ThemeModeContext";
-import { THEME } from "../../../data";
+import { ThemeModeContext, THEME } from "../../contexts/ThemeModeContext";
 
 const ProjectItem = ({ project, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);

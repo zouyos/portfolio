@@ -1,11 +1,15 @@
 import Avatar from "./components/Avatar/Avatar";
+import redux_icon from "./assets/img/redux-icon.png";
+import vue_icon from "./assets/img/vue-js-icon.png";
+import node_icon from "./assets/img/node-js-icon.png";
+import spring_icon from "./assets/img/spring-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
-import { THEME, projects, techRatings } from "../data";
+import { projects } from "../data";
 import { useContext, useEffect, useState } from "react";
 import linkedin_icon from "./assets/img/linkedin-icon.png";
-import { FiveStarRating } from "./components/FIveStarRating/FiveStarRating";
-import { ThemeModeContext } from "./contexts/ThemeModeContext";
+import spotify_icon from "./assets/img/spotify-icon.png";
+import { THEME, ThemeModeContext } from "./contexts/ThemeModeContext";
 import { Form } from "react-bootstrap";
 import { MoonFill, Sun } from "react-bootstrap-icons";
 
@@ -83,8 +87,57 @@ function App() {
                 JS Developer
               </h2>
               <hr />
-              <div>
-                <FiveStarRating techRatings={techRatings} />
+              <div className="text-wrap lh-lg">
+                <p>
+                  Hi, I'm Zouyos, a more-into-frontend JS developer that mainly
+                  works with{" "}
+                  <span>
+                    <img
+                      src={THEME[themeMode].react_icon}
+                      className={style.icon}
+                    />
+                  </span>{" "}
+                  React and{" "}
+                  <span>
+                    <img src={redux_icon} className={style.icon} />
+                  </span>{" "}
+                  Redux
+                </p>
+                <p>
+                  I also love working with{" "}
+                  <span>
+                    <img src={vue_icon} className={style.icon} />
+                  </span>{" "}
+                  Vue.js
+                </p>
+                <p>
+                  I also have a backend background with a Bachelor level diploma
+                  (
+                  <span>
+                    <img
+                      src={THEME[themeMode].symfony_icon}
+                      className={style.icon}
+                    />
+                  </span>{" "}
+                  Symfony and{" "}
+                  <span>
+                    <img src={spring_icon} className={style.icon} />
+                  </span>{" "}
+                  Spring Boot), and recently I've began coding with{" "}
+                  <span>
+                    <img src={node_icon} className={style.icon} />
+                  </span>{" "}
+                  Node.js and{" "}
+                  <span>
+                    <img
+                      src={THEME[themeMode].next_icon}
+                      className={style.icon}
+                    />
+                  </span>{" "}
+                  Next.js
+                </p>
+                <p>But I'm really more into frontend development</p>
+                <p>🐵</p>
               </div>
               <hr />
               <div className="d-flex flex-column justify-content-center align-items-center">
@@ -106,6 +159,13 @@ function App() {
                       src={THEME[themeMode].github_icon}
                       className={style.icon}
                     />
+                  </a>
+                  <a
+                    href="https://open.spotify.com/playlist/4Fz42bWhRwY8x1bamck92q?si=ceb09f154d554b54"
+                    target="__blank"
+                    className="mx-2"
+                  >
+                    <img src={spotify_icon} className={style.icon} />
                   </a>
                 </div>
               </div>
@@ -167,7 +227,16 @@ function App() {
                           style={{ color: THEME[themeMode].secondaryColor }}
                         >
                           {tech.icon && (
-                            <img src={tech.icon} className={style.icon} />
+                            <img
+                              src={
+                                themeMode === "dark"
+                                  ? tech.icon.icon_dark
+                                  : tech.icon.icon_light
+                                  ? tech.icon.icon_light
+                                  : tech.icon.icon_dark
+                              }
+                              className={`${style.icon} me-1`}
+                            />
                           )}
                           <span className="para me-1 text-wrap">
                             {i !== selectedProject.techs.length - 1

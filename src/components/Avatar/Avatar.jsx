@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import style from "./style.module.css";
-import { ThemeModeContext } from "../../contexts/ThemeModeContext";
-import { THEME } from "../../../data";
+import { ThemeModeContext, THEME } from "../../contexts/ThemeModeContext";
 
 const Avatar = ({ img, title }) => {
   const { themeMode } = useContext(ThemeModeContext);
