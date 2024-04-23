@@ -29,7 +29,7 @@ const ProjectItem = ({ project, onClick }) => {
         {project.name}
       </h3>
       <p
-        className="para"
+        className={`para ${style.desc}`}
         style={{
           color: THEME[themeMode].secondaryColor,
         }}

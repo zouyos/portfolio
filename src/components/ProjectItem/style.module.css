@@ -1,13 +1,34 @@
 .card {
-  width: 21rem;
+  width: 24rem;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 20px;
   position: relative;
   border-radius: 10px;
 }
 
 .img {
-  width: 21rem;
+  width: 24rem;
   padding: 0 1.3rem;
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 20rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .img {
+    width: 20rem;
+    padding: 0 1.3rem;
+  }
+}
+
+.desc {
+  height: 3rem;
+  overflow: scroll;
 }

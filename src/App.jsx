@@ -192,7 +192,7 @@ function App() {
               <hr />
               {selectedProject === null ? (
                 <div
-                  className="para text-center italic mt-4"
+                  className="para text-center italic mt-5"
                   style={{ color: THEME[themeMode].secondaryColor }}
                 >
                   Click on a project to display information
