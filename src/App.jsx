@@ -104,11 +104,11 @@ function App() {
                   Redux
                 </p>
                 <p>
-                  I also love working with{" "}
+                  I love working with{" "}
                   <span>
                     <img src={vue_icon} className={style.icon} />
                   </span>{" "}
-                  Vue.js
+                  Vue.js as well
                 </p>
                 <p>
                   I also have a backend background with a Bachelor level diploma
