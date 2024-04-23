@@ -104,15 +104,15 @@ function App() {
                   Redux
                 </p>
                 <p>
-                  I love working with{" "}
+                  I also love working with{" "}
                   <span>
                     <img src={vue_icon} className={style.icon} />
                   </span>{" "}
-                  Vue.js as well
+                  Vue.js
                 </p>
                 <p>
-                  I also have a backend background with a Bachelor level diploma
-                  in{" "}
+                  I have a backend background as well with a Bachelor level
+                  diploma in{" "}
                   <span>
                     <img
                       src={THEME[themeMode].symfony_icon}
@@ -123,7 +123,7 @@ function App() {
                   <span>
                     <img src={spring_icon} className={style.icon} />
                   </span>{" "}
-                  Spring Boot, and recently I've began coding with{" "}
+                  Spring Boot development, and recently I've started coding with{" "}
                   <span>
                     <img src={node_icon} className={style.icon} />
                   </span>{" "}
