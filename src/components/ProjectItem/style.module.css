@@ -29,6 +29,6 @@
 }
 
 .desc {
-  height: 3.1rem;
-  overflow: scroll;
+  height: 3rem;
+  overflow: hidden;
 }
