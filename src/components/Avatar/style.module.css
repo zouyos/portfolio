@@ -3,15 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 0 20px;
+  margin: 50px 0 10px;
 }
 
 .img {
   width: 180px;
   border-radius: 180px;
   border: 2px solid;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 .title {
-  font-size: 42px;
+  font-size: 48px;
 }

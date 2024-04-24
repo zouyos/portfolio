@@ -81,7 +81,7 @@ function App() {
                 style={{
                   fontSize: "30px",
                   color: THEME[themeMode].secondaryColor,
-                  marginBottom: "20px",
+                  marginBottom: "30px",
                 }}
               >
                 React Developer
@@ -209,9 +209,9 @@ function App() {
                     </span>
                   </p>
                   <p className="fs-5">
-                    Description:
+                    Description:{" "}
                     <pre
-                      className="para fs-6 text-wrap"
+                      className="para fs-6 text-wrap d-inline"
                       style={{ color: THEME[themeMode].secondaryColor }}
                     >
                       {selectedProject.description}
