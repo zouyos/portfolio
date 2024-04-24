@@ -7,6 +7,17 @@ const ProjectItem = ({ project, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
   const { themeMode } = useContext(ThemeModeContext);
 
+  function formatDate(date) {
+    const formattedDate = date
+      .toLocaleString("en-US", {
+        month: "short",
+        year: "numeric",
+      })
+      .toLowerCase();
+    const parts = formattedDate.split(" ");
+    return `${parts[0]}. ${parts[1]}`;
+  }
+
   return (
     <div
       className={style.card}
@@ -52,11 +63,7 @@ const ProjectItem = ({ project, onClick }) => {
           fontWeight: "semi-bold",
         }}
       >
-        {new Date(project.created_at).toLocaleString("en-US", {
-          month: "short",
-          monthDisplay: "short",
-          year: "numeric",
-        })}
+        {formatDate(new Date(project.created_at))}
       </div>
     </div>
   );
