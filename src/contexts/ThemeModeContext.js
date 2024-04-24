@@ -29,10 +29,10 @@ const THEME = {
   light: {
     primaryColor: "#a04000",
     secondaryColor: "#192227",
-    primaryBackgroundColor: "#85c1e9",
-    secondaryBackgroundColor: "#ebedef",
+    primaryBackgroundColor: "#d6eaf8",
+    secondaryBackgroundColor: "#ffffff",
     borderColor: "white",
-    borderHoverColor: "#a04000",
+    borderHoverColor: "#192227",
     avatar: avatar,
     github_icon: github_icon_dark,
     react_icon: react_icon_dark,

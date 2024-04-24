@@ -29,7 +29,7 @@ export const projects = [
     short_description:
       "TV show advisor developed with React and using TMDB API",
     description:
-      "Based on « The Movie Database » API endpoint listing trending TV shows, this project displays infos about the more popular TV show, and a list recommendations that loads the selected TV show.\nThe app also allows the user to search a TV show within TMDB. Unit tests are added with Jest and react-testing library.",
+      "Based on « The Movie Database » API endpoint listing trending TV shows, this application dynamically displays details about the most watched TV show.\nA list of related recommendations is also provided, loading details about the selected show when clicked.\nThe application also allows the user to search a TV show within TMDB.\nUnit tests are added with Jest and react-testing library.",
     techs: [techs.react],
     image: watowatch,
     visit_link: "https://watowatch-tv-show-advisor.vercel.app/",
@@ -41,7 +41,7 @@ export const projects = [
     name: "ISpent",
     short_description: "Expense tracker developed with React and Redux",
     description:
-      "This application helps the user manage their budget by setting an income and listing expenses.\nIt uses Redux library that helps centralizing the application's state and logic making it easy to test or debug.\nRedux Persist library provides state persitence. Unit tests are added with Jest and react-testing library.",
+      "This application helps the user manage their budget by setting an income and a list of expenses.\nIt uses Redux library that helps centralizing the application's state and logic, making it easy to test or debug. Redux Persist library provides state persitence.\nUnit tests are added with Jest and react-testing library.",
     techs: [techs.react, techs.redux, { name: "Redux Persist" }],
     image: ispent,
     visit_link: "https://ispent-expense-tracker.vercel.app/",
@@ -53,7 +53,7 @@ export const projects = [
     name: "Poke'Decks",
     short_description: "Pokemon fan game developed with React and Custom Hooks",
     description:
-      "A Pokemon mini game developed with React.\nThe application uses a public API to retreive data and consist in a random lottery with different ratios on collectable pokemons.\nIt uses custom hooks like « useLocalStorage » for browser persitence and « useScrollPosition » to display useful scroll buttons, especially on mobile devices.",
+      "Pokemon mini game developed with React, this application uses a public API to retreive data and consists in a random lottery of collectable pokemons.\nPokemons have different apparition rates.\nIt uses custom hooks like « useLocalStorage » for browser persitence and « useScrollPosition » to display useful scroll buttons, especially on mobile devices.",
     techs: [techs.react, { name: "Custom Hooks" }],
     image: pokedecks,
     visit_link: "https://poke-decks-game.vercel.app/",
@@ -65,7 +65,7 @@ export const projects = [
     name: "Notomatic",
     short_description: "Note manager developed with React and Redux",
     description:
-      "This application allows the user to create and manage notes within an intuitive interface.\nIt uses Redux library to centralize the application's state and logic, and Redux Persist provides state persitence.",
+      "This application allows the user to create and manage notes within an intuitive interface.\nIt uses Redux library to centralize the application's state and logic, and Redux Persist to provide state persitence.",
     techs: [techs.react, techs.redux, { name: "Redux Persist" }],
     image: notomatic,
     visit_link: "https://notomatic-note-manager.vercel.app/",

@@ -81,7 +81,7 @@ function App() {
                 style={{
                   fontSize: "30px",
                   color: THEME[themeMode].secondaryColor,
-                  marginBottom: "30px",
+                  marginBottom: "20px",
                 }}
               >
                 React Developer
@@ -140,9 +140,9 @@ function App() {
                 <p>🐵</p>
               </div>
               <hr />
-              <div className="d-flex flex-column justify-content-center align-items-center">
-                <p className="fs-4 mb-2 fw-bold">Social</p>
-                <div className="d-flex justify-content-center align-items-center mt-2 mb-3">
+              <div className={style.social}>
+                <h4 className="mb-3 fw-bold">Social</h4>
+                <div className="d-flex justify-content-center align-items-center">
                   <a
                     href="https://www.linkedin.com/in/hamza-benketaf/"
                     target="__blank"
@@ -211,8 +211,11 @@ function App() {
                   <p className="fs-5">
                     Description:{" "}
                     <pre
-                      className="para fs-6 text-wrap d-inline"
-                      style={{ color: THEME[themeMode].secondaryColor }}
+                      className="para fs-6 d-inline text-break"
+                      style={{
+                        whiteSpace: "pre-wrap",
+                        color: THEME[themeMode].secondaryColor,
+                      }}
                     >
                       {selectedProject.description}
                     </pre>

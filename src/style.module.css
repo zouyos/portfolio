@@ -23,6 +23,14 @@
   font-size: 17px;
 }
 
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
 .workspace {
   display: flex;
   flex-direction: column;
