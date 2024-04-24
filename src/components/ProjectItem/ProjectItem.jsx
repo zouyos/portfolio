@@ -52,7 +52,11 @@ const ProjectItem = ({ project, onClick }) => {
           fontWeight: "semi-bold",
         }}
       >
-        {project.created_at}
+        {new Date(project.created_at).toLocaleString("en-US", {
+          month: "short",
+          monthDisplay: "short",
+          year: "numeric",
+        })}
       </div>
     </div>
   );

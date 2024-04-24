@@ -253,7 +253,11 @@ function App() {
                       className="para fs-6"
                       style={{ color: THEME[themeMode].secondaryColor }}
                     >
-                      {" " + selectedProject.created_at}
+                      {" " +
+                        new Date(selectedProject.created_at).toLocaleString(
+                          "en-US",
+                          { month: "long", year: "numeric" }
+                        )}
                     </span>
                   </p>
                 </div>

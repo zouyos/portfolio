@@ -34,7 +34,7 @@ export const projects = [
     image: watowatch,
     visit_link: "https://watowatch-tv-show-advisor.vercel.app/",
     github_link: "https://github.com/zouyos/tv-show-advisor",
-    created_at: "December 2022",
+    created_at: new Date(2022, 11),
   },
   {
     id: 2,
@@ -46,7 +46,7 @@ export const projects = [
     image: ispent,
     visit_link: "https://ispent-expense-tracker.vercel.app/",
     github_link: "https://github.com/zouyos/expense-tracker",
-    created_at: "August 2023",
+    created_at: new Date(2023, 7),
   },
   {
     id: 3,
@@ -58,7 +58,7 @@ export const projects = [
     image: pokedecks,
     visit_link: "https://poke-decks-game.vercel.app/",
     github_link: "https://github.com/zouyos/poke-decks",
-    created_at: "February 2024",
+    created_at: new Date(2024, 1),
   },
   {
     id: 4,
@@ -70,6 +70,6 @@ export const projects = [
     image: notomatic,
     visit_link: "https://notomatic-note-manager.vercel.app/",
     github_link: "https://github.com/zouyos/notomatic",
-    created_at: "April 2024",
+    created_at: new Date(2024, 3),
   },
 ];
