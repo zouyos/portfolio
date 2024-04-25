@@ -29,7 +29,7 @@ export const projects = [
     short_description:
       "TV show advisor developed with React and using TMDB API",
     description:
-      "Based on « The Movie Database » API endpoint listing trending TV shows, this application dynamically displays details about the most watched TV show.\nA list of related recommendations is also provided, loading details about the selected show when clicked.\nThe application also allows the user to search a TV show within TMDB.\nUnit tests are added with Jest and react-testing library.",
+      "Based on « The Movie Database » API endpoint listing trending TV shows, this application displays details about the most watched TV show.\nA list of related recommendations is provided, loading details about the selected show when clicked.\nThe application also allows the user to search a TV show within TMDB.\nUnit tests are added with Jest and react-testing library.",
     techs: [techs.react],
     image: watowatch,
     visit_link: "https://watowatch-tv-show-advisor.vercel.app/",
