@@ -180,7 +180,11 @@ function App() {
             >
               <div className="fs-4 fw-bold">Projects</div>
               <hr />
-              <ProjectList projects={projects} onClick={handleProjectClick} />
+              <ProjectList
+                projects={projects}
+                selectedProject={selectedProject}
+                onClick={handleProjectClick}
+              />
             </div>
             <div
               className={style.cards_description}

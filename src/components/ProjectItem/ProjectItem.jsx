@@ -3,7 +3,7 @@ import style from "./style.module.css";
 import { useContext, useState } from "react";
 import { ThemeModeContext, THEME } from "../../contexts/ThemeModeContext";
 
-const ProjectItem = ({ project, onClick }) => {
+const ProjectItem = ({ project, onClick, isSelected }) => {
   const [isHovered, setIsHovered] = useState(false);
   const { themeMode } = useContext(ThemeModeContext);
 
@@ -22,7 +22,9 @@ const ProjectItem = ({ project, onClick }) => {
     <div
       className={style.card}
       style={{
-        outline: isHovered && `2px solid ${THEME[themeMode].borderHoverColor}`,
+        outline:
+          (isHovered || isSelected) &&
+          `2px solid ${THEME[themeMode].borderHoverColor}`,
         backgroundColor: THEME[themeMode].primaryBackgroundColor,
       }}
       onMouseEnter={() => setIsHovered(true)}

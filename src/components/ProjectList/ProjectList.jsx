@@ -1,7 +1,7 @@
 import ProjectItem from "../ProjectItem/ProjectItem";
 import style from "./style.module.css";
 
-const ProjectList = ({ projects, onClick }) => {
+const ProjectList = ({ selectedProject, projects, onClick }) => {
   return (
     <div className={style.container}>
       {projects.map((project, i) => {
@@ -13,7 +13,11 @@ const ProjectList = ({ projects, onClick }) => {
               marginLeft: i === 0 && "2px",
             }}
           >
-            <ProjectItem project={project} onClick={onClick} />
+            <ProjectItem
+              project={project}
+              onClick={onClick}
+              isSelected={project === selectedProject}
+            />
           </div>
         );
       })}

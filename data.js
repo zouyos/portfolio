@@ -70,6 +70,6 @@ export const projects = [
     image: notomatic,
     visit_link: "https://notomatic-note-manager.vercel.app/",
     github_link: "https://github.com/zouyos/notomatic",
-    created_at: new Date("2024-04"),
+    created_at: new Date("2024-03"),
   },
 ];
