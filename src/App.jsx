@@ -3,6 +3,7 @@ import redux_icon from "./assets/img/redux-icon.png";
 import vue_icon from "./assets/img/vue-js-icon.png";
 import node_icon from "./assets/img/node-js-icon.png";
 import ts_icon from "./assets/img/ts-icon.png";
+import js_icon from "./assets/img/js-icon.png";
 import spring_icon from "./assets/img/spring-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
@@ -138,11 +139,16 @@ function App() {
                   Next.js
                 </p>
                 <p>
-                  I also try to use{" "}
+                  But I'm really more into frontend development, and while my
+                  former projects are coded with vanilla{" "}
+                  <span>
+                    <img src={js_icon} className={style.icon} />
+                  </span>{" "}
+                  JavaScript, I try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
-                  TypeScript on my newest projects as much as I can
+                  TypeScript as much as I can on my newest projects
                 </p>
                 <p>🐵</p>
               </div>
