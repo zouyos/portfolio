@@ -2,6 +2,7 @@ import Avatar from "./components/Avatar/Avatar";
 import redux_icon from "./assets/img/redux-icon.png";
 import vue_icon from "./assets/img/vue-js-icon.png";
 import node_icon from "./assets/img/node-js-icon.png";
+import ts_icon from "./assets/img/ts-icon.png";
 import spring_icon from "./assets/img/spring-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
@@ -84,7 +85,7 @@ function App() {
                   marginBottom: "20px",
                 }}
               >
-                React Developer
+                JavaScript Developer
               </h2>
               <hr />
               <div className={`${style.description} lh-lg`}>
@@ -136,7 +137,13 @@ function App() {
                   </span>{" "}
                   Next.js
                 </p>
-                <p>But I'm really more into frontend development</p>
+                <p>
+                  I also try to use{" "}
+                  <span>
+                    <img src={ts_icon} className={style.icon} />
+                  </span>{" "}
+                  TypeScript on my newest projects as much as I can
+                </p>
                 <p>🐵</p>
               </div>
               <hr />
@@ -213,9 +220,9 @@ function App() {
                     </span>
                   </p>
                   <p className="fs-5">
-                    Description:{" "}
+                    Description:
                     <pre
-                      className="para fs-6 d-inline text-break"
+                      className="para fs-6 d-inline text-break ms-1"
                       style={{
                         whiteSpace: "pre-wrap",
                         color: THEME[themeMode].secondaryColor,

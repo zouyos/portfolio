@@ -18,6 +18,16 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
     return `${parts[0]}. ${parts[1]}`;
   }
 
+  const handleLinkClick = (e) => {
+    e.stopPropagation();
+    if (e.target.classList.contains("visit")) {
+      window.open(project.visit_link, "_blank");
+    }
+    if (e.target.classList.contains("github")) {
+      window.open(project.visit_link, "_blank");
+    }
+  };
+
   return (
     <div
       className={style.card}
@@ -49,14 +59,16 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
       >
         {project.short_description}
       </p>
-      <a href={project.visit_link} target="__blank">
-        <Button variant="primary" className="me-2">
-          Visit
-        </Button>
-      </a>
-      <a href={project.github_link} target="__blank">
-        <Button variant="secondary">GitHub</Button>
-      </a>
+      <Button
+        variant="primary"
+        className="me-2 visit"
+        onClick={handleLinkClick}
+      >
+        Visit
+      </Button>
+      <Button variant="secondary" className="github" onClick={handleLinkClick}>
+        GitHub
+      </Button>
       <hr />
       <div
         className="pb-0"
