@@ -139,16 +139,11 @@ function App() {
                   Next.js
                 </p>
                 <p>
-                  But I'm really more into frontend development, and while my
-                  former projects are coded with vanilla{" "}
-                  <span>
-                    <img src={js_icon} className={style.icon} />
-                  </span>{" "}
-                  JavaScript, I try to use{" "}
+                  I also try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
-                  TypeScript as much as I can on my newest projects
+                  TypeScript as much as I can on my newest frontend projects
                 </p>
                 <p>🐵</p>
               </div>
