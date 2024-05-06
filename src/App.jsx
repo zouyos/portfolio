@@ -85,7 +85,7 @@ function App() {
                   marginBottom: "20px",
                 }}
               >
-                React Developer
+                JavaScript Developer
               </h2>
               <hr />
               <div className={`${style.description} lh-lg`}>

@@ -41,7 +41,7 @@ export const projects = [
     name: "ISpent",
     short_description: "Expense tracker developed with React and Redux",
     description:
-      "This application helps the user manage their budget by setting an income and a list of expenses.\nIt uses Redux library that helps centralizing the application's state and logic, making it easy to test or debug. Redux Persist library provides state persitence.\nUnit tests are added with Jest and react-testing library.",
+      "This application helps the user manage their budget by setting an income and a list of expenses.\nIt uses Redux library that helps centralizing the application's state and logic, making it easy to test or debug.\nRedux Persist library provides state persitence.\nUnit tests are added with Jest and react-testing library.",
     techs: [techs.react, techs.redux, { name: "Redux Persist" }],
     image: ispent,
     visit_link: "https://ispent-expense-tracker.vercel.app/",
@@ -65,7 +65,7 @@ export const projects = [
     name: "Notomatic",
     short_description: "Note manager developed with React and Redux",
     description:
-      "This application allows the user to create and manage notes within an intuitive interface.\nIt uses Redux library to centralize the application's state and logic, and Redux Persist to provide state persitence.",
+      "This application allows the user to create and manage notes within an intuitive interface.\nIt uses Redux library to centralize the application's state and logic.\nRedux Persist to provide state persitence.",
     techs: [techs.react, techs.redux, { name: "Redux Persist" }],
     image: notomatic,
     visit_link: "https://notomatic-note-manager.vercel.app/",

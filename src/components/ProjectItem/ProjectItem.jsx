@@ -24,7 +24,7 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
       window.open(project.visit_link, "_blank");
     }
     if (e.target.classList.contains("github")) {
-      window.open(project.visit_link, "_blank");
+      window.open(project.github_link, "_blank");
     }
   };
 
@@ -59,16 +59,24 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
       >
         {project.short_description}
       </p>
-      <Button
-        variant="primary"
-        className="me-2 visit"
-        onClick={handleLinkClick}
-      >
-        Visit
-      </Button>
-      <Button variant="secondary" className="github" onClick={handleLinkClick}>
-        GitHub
-      </Button>
+      <a href={project.visit_link} target="__blank">
+        <Button
+          variant="primary"
+          className="me-2 visit"
+          onClick={handleLinkClick}
+        >
+          Visit
+        </Button>
+      </a>
+      <a href={project.github_link} target="__blank">
+        <Button
+          variant="secondary"
+          className="github"
+          onClick={handleLinkClick}
+        >
+          GitHub
+        </Button>
+      </a>
       <hr />
       <div
         className="pb-0"
