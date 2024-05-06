@@ -3,7 +3,6 @@ import redux_icon from "./assets/img/redux-icon.png";
 import vue_icon from "./assets/img/vue-js-icon.png";
 import node_icon from "./assets/img/node-js-icon.png";
 import ts_icon from "./assets/img/ts-icon.png";
-import js_icon from "./assets/img/js-icon.png";
 import spring_icon from "./assets/img/spring-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
@@ -220,18 +219,16 @@ function App() {
                       {" " + selectedProject.name}
                     </span>
                   </p>
-                  <p className="fs-5">
-                    Description:
-                    <pre
-                      className="para fs-6 d-inline text-break ms-1"
-                      style={{
-                        whiteSpace: "pre-wrap",
-                        color: THEME[themeMode].secondaryColor,
-                      }}
-                    >
-                      {selectedProject.description}
-                    </pre>
-                  </p>
+                  <p className="fs-5 mb-0">Description:</p>
+                  <pre
+                    className="para fs-6 text-break"
+                    style={{
+                      whiteSpace: "pre-wrap",
+                      color: THEME[themeMode].secondaryColor,
+                    }}
+                  >
+                    {selectedProject.description}
+                  </pre>
                   <p className="d-flex">
                     <span className="fs-5 me-1">Developed with: </span>
                     {selectedProject.techs.map((tech, i) => {
