@@ -65,7 +65,7 @@ export const projects = [
     name: "Notomatic",
     short_description: "Note manager developed with React and Redux",
     description:
-      "This application allows the user to create and manage notes within an intuitive interface.\nIt uses Redux library to centralize the application's state and logic.\nRedux Persist to provide state persitence.",
+      "This application allows the user to create and manage notes within an intuitive interface.\nIt uses Redux library to centralize the application's state and logic.\nRedux Persist provides state persitence.",
     techs: [techs.react, techs.redux, { name: "Redux Persist" }],
     image: notomatic,
     visit_link: "https://notomatic-note-manager.vercel.app/",
