@@ -48,7 +48,7 @@ function App() {
           backgroundColor: THEME[themeMode].primaryBackgroundColor,
         }}
       >
-        <div className="row h-100">
+        <div className='row h-100'>
           <div
             className={`col-sm-12 col-md-3 ${style.side_bar}`}
             style={{
@@ -58,19 +58,19 @@ function App() {
             }}
           >
             <div>
-              <Form className="d-flex align-items-center">
+              <Form className='d-flex align-items-center'>
                 <Sun size={17} style={{ marginRight: "10px" }} />
                 <Form.Check
-                  type="switch"
-                  id="theme-switch"
+                  type='switch'
+                  id='theme-switch'
                   checked={themeMode === "dark"}
                   value={themeMode}
                   onChange={toggleThemeMode}
                 />
-                <MoonFill className="ms-1" />
+                <MoonFill className='ms-1' />
               </Form>
             </div>
-            <Avatar img={THEME[themeMode].avatar} title="Zouyos" />
+            <Avatar img={THEME[themeMode].avatar} title='Zouyos' />
             <div
               className={style.presentation}
               style={{
@@ -138,7 +138,7 @@ function App() {
                   Next.js
                 </p>
                 <p>
-                  I also try to use{" "}
+                  I try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
@@ -148,19 +148,19 @@ function App() {
               </div>
               <hr />
               <div className={style.social}>
-                <h4 className="mb-3 fw-bold">Social</h4>
-                <div className="d-flex justify-content-center align-items-center">
+                <h4 className='mb-3 fw-bold'>Social</h4>
+                <div className='d-flex justify-content-center align-items-center'>
                   <a
-                    href="https://www.linkedin.com/in/hamza-benketaf/"
-                    target="__blank"
-                    className="mx-2"
+                    href='https://www.linkedin.com/in/hamza-benketaf/'
+                    target='__blank'
+                    className='mx-2'
                   >
                     <img src={linkedin_icon} className={style.icon} />
                   </a>
                   <a
-                    href="https://github.com/zouyos"
-                    target="__blank"
-                    className="mx-2"
+                    href='https://github.com/zouyos'
+                    target='__blank'
+                    className='mx-2'
                   >
                     <img
                       src={THEME[themeMode].github_icon}
@@ -168,9 +168,9 @@ function App() {
                     />
                   </a>
                   <a
-                    href="https://open.spotify.com/playlist/4Fz42bWhRwY8x1bamck92q?si=ceb09f154d554b54"
-                    target="__blank"
-                    className="mx-2"
+                    href='https://open.spotify.com/playlist/4Fz42bWhRwY8x1bamck92q?si=ceb09f154d554b54'
+                    target='__blank'
+                    className='mx-2'
                   >
                     <img src={spotify_icon} className={style.icon} />
                   </a>
@@ -185,7 +185,7 @@ function App() {
                 backgroundColor: THEME[themeMode].secondaryBackgroundColor,
               }}
             >
-              <div className="fs-4 fw-bold">Projects</div>
+              <div className='fs-4 fw-bold'>Projects</div>
               <hr />
               <ProjectList
                 projects={projects}
@@ -199,29 +199,29 @@ function App() {
                 backgroundColor: THEME[themeMode].primaryBackgroundColor,
               }}
             >
-              <div className="fs-4 fw-bold">Description</div>
+              <div className='fs-4 fw-bold'>Description</div>
               <hr />
               {selectedProject === null ? (
                 <div
-                  className="para text-center italic mt-5 mb-4"
+                  className='para text-center italic mt-5 mb-4'
                   style={{ color: THEME[themeMode].secondaryColor }}
                 >
                   Click on a project to display information
                 </div>
               ) : (
-                <div className="my-3">
-                  <p className="fs-5">
+                <div className='my-3'>
+                  <p className='fs-5'>
                     Name of project:
                     <span
-                      className="para fs-6"
+                      className='para fs-6'
                       style={{ color: THEME[themeMode].secondaryColor }}
                     >
                       {" " + selectedProject.name}
                     </span>
                   </p>
-                  <p className="fs-5 mb-0">Description:</p>
+                  <p className='fs-5 mb-0'>Description:</p>
                   <pre
-                    className="para fs-6 text-break"
+                    className='para fs-6 text-break'
                     style={{
                       whiteSpace: "pre-wrap",
                       color: THEME[themeMode].secondaryColor,
@@ -229,13 +229,13 @@ function App() {
                   >
                     {selectedProject.description}
                   </pre>
-                  <p className="d-flex">
-                    <span className="fs-5 me-1">Developed with: </span>
+                  <p className='d-flex'>
+                    <span className='fs-5 me-1'>Developed with: </span>
                     {selectedProject.techs.map((tech, i) => {
                       return (
                         <span
                           key={tech.name + i}
-                          className="d-flex align-items-center flex-wrap"
+                          className='d-flex align-items-center flex-wrap'
                           style={{ color: THEME[themeMode].secondaryColor }}
                         >
                           {tech.icon && (
@@ -250,7 +250,7 @@ function App() {
                               className={`${style.icon} me-1`}
                             />
                           )}
-                          <span className="para me-1 text-wrap">
+                          <span className='para me-1 text-wrap'>
                             {i !== selectedProject.techs.length - 1
                               ? tech.name + " / "
                               : tech.name}
@@ -259,10 +259,10 @@ function App() {
                       );
                     })}
                   </p>
-                  <p className="fs-5">
+                  <p className='fs-5'>
                     Creation date:
                     <span
-                      className="para fs-6"
+                      className='para fs-6'
                       style={{ color: THEME[themeMode].secondaryColor }}
                     >
                       {" " +
