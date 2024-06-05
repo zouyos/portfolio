@@ -88,8 +88,8 @@ function App() {
               <hr />
               <div className={`${style.description} lh-lg`}>
                 <p>
-                  Hi I'm Zouyos, a frontend developer coming from a retraining
-                  and owning a bachelor level degree
+                  Hi I'm Zouyos, a frontend developer coming from a retraining,
+                  with a bachelor level degree
                 </p>
                 <p>
                   I mainly work with{" "}
