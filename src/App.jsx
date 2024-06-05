@@ -124,7 +124,7 @@ function App() {
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
-                  TypeScript as much as I can on my newest frontend projects
+                  TypeScript as much as I can on my newest projects
                 </p>
                 <p>🐵</p>
               </div>
