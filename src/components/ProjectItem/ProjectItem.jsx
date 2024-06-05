@@ -41,7 +41,7 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => onClick(project)}
     >
-      <div className="d-flex justify-content-center mb-2">
+      <div className='d-flex justify-content-center mb-2'>
         <img src={project.image} className={style.img} />
       </div>
       <h3
@@ -59,27 +59,19 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
       >
         {project.short_description}
       </p>
-      <a href={project.visit_link} target="__blank">
-        <Button
-          variant="primary"
-          className="me-2 visit"
-          onClick={handleLinkClick}
-        >
-          Visit
-        </Button>
-      </a>
-      <a href={project.github_link} target="__blank">
-        <Button
-          variant="secondary"
-          className="github"
-          onClick={handleLinkClick}
-        >
-          GitHub
-        </Button>
-      </a>
+      <Button
+        variant='primary'
+        className='me-2 visit'
+        onClick={handleLinkClick}
+      >
+        Visit
+      </Button>
+      <Button variant='secondary' className='github' onClick={handleLinkClick}>
+        GitHub
+      </Button>
       <hr />
       <div
-        className="pb-0"
+        className='pb-0'
         style={{
           color: THEME[themeMode].primaryColor,
           fontWeight: "semi-bold",
