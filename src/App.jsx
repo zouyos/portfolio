@@ -1,7 +1,6 @@
 import Avatar from "./components/Avatar/Avatar";
 import redux_icon from "./assets/img/redux-icon.png";
 import vue_icon from "./assets/img/vue-js-icon.png";
-import node_icon from "./assets/img/node-js-icon.png";
 import ts_icon from "./assets/img/ts-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
@@ -84,12 +83,16 @@ function App() {
                   marginBottom: "20px",
                 }}
               >
-                JavaScript Developer
+                React Developer
               </h2>
               <hr />
               <div className={`${style.description} lh-lg`}>
                 <p>
-                  Hi, I'm Zouyos, a frontend developer that mainly works with{" "}
+                  Hi I'm Zouyos, a frontend developer coming from a retraining,
+                  with a bachelor level degree
+                </p>
+                <p>
+                  I mainly work with{" "}
                   <span>
                     <img
                       src={THEME[themeMode].react_icon}
@@ -103,22 +106,11 @@ function App() {
                   Redux
                 </p>
                 <p>
-                  I also love working with{" "}
+                  I love working with{" "}
                   <span>
                     <img src={vue_icon} className={style.icon} />
                   </span>{" "}
-                  Vue.js
-                </p>
-                <p>
-                  I'm coming from a retraining and I have a bachelor level
-                  degree
-                </p>
-                <p>
-                  Recently I've started coding with{" "}
-                  <span>
-                    <img src={node_icon} className={style.icon} />
-                  </span>{" "}
-                  Node.js and{" "}
+                  Vue.js as well and I've recently started coding with{" "}
                   <span>
                     <img
                       src={THEME[themeMode].next_icon}
