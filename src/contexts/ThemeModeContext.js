@@ -7,8 +7,6 @@ import github_icon_white from "../assets/img/github-icon-white.png";
 import github_icon_dark from "../assets/img/github-icon-dark.png";
 import next_icon from "../assets/img/next-js-icon.png";
 import next_icon_white from "../assets/img/next-js-icon-white.png";
-import symfony_icon from "../assets/img/symfony-icon.png";
-import symfony_icon_white from "../assets/img/symfony-icon-white.png";
 
 const ThemeModeContext = createContext("dark");
 
@@ -24,7 +22,6 @@ const THEME = {
     github_icon: github_icon_white,
     react_icon: react_icon,
     next_icon: next_icon_white,
-    symfony_icon: symfony_icon_white,
   },
   light: {
     primaryColor: "#a04000",
@@ -37,7 +34,6 @@ const THEME = {
     github_icon: github_icon_dark,
     react_icon: react_icon_dark,
     next_icon: next_icon,
-    symfony_icon: symfony_icon,
   },
 };
 

@@ -3,7 +3,6 @@ import redux_icon from "./assets/img/redux-icon.png";
 import vue_icon from "./assets/img/vue-js-icon.png";
 import node_icon from "./assets/img/node-js-icon.png";
 import ts_icon from "./assets/img/ts-icon.png";
-import spring_icon from "./assets/img/spring-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
 import { projects } from "../data";
@@ -90,8 +89,7 @@ function App() {
               <hr />
               <div className={`${style.description} lh-lg`}>
                 <p>
-                  Hi, I'm Zouyos, a more-into-frontend fullstack developer that
-                  mainly works with{" "}
+                  Hi, I'm Zouyos, a frontend developer that mainly works with{" "}
                   <span>
                     <img
                       src={THEME[themeMode].react_icon}
@@ -112,19 +110,11 @@ function App() {
                   Vue.js
                 </p>
                 <p>
-                  I have a backend background as well with a Bachelor level
-                  diploma in{" "}
-                  <span>
-                    <img
-                      src={THEME[themeMode].symfony_icon}
-                      className={style.icon}
-                    />
-                  </span>{" "}
-                  Symfony and{" "}
-                  <span>
-                    <img src={spring_icon} className={style.icon} />
-                  </span>{" "}
-                  Spring Boot development, and recently I've started coding with{" "}
+                  I'm coming from a retraining and I have a bachelor level
+                  degree
+                </p>
+                <p>
+                  Recently I've started coding with{" "}
                   <span>
                     <img src={node_icon} className={style.icon} />
                   </span>{" "}
@@ -138,7 +128,7 @@ function App() {
                   Next.js
                 </p>
                 <p>
-                  I try to use{" "}
+                  I also try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
