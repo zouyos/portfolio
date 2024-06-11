@@ -88,8 +88,8 @@ function App() {
               <hr />
               <div className={`${style.description} lh-lg`}>
                 <p>
-                  Hi I'm Zouyos, a frontend developer coming from a retraining,
-                  with a bachelor level degree
+                  Hi I'm Zouyos, a frontend developer with a bachelor level
+                  degree
                 </p>
                 <p>
                   I mainly work with{" "}
@@ -106,11 +106,11 @@ function App() {
                   Redux
                 </p>
                 <p>
-                  I now try to use{" "}
+                  I try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
-                  TypeScript on my newest projects
+                  TypeScript as much as I can on my newest projects
                 </p>
                 <p>
                   I like to make sure that the projects I work on are user
