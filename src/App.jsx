@@ -110,7 +110,7 @@ function App() {
                   <span>
                     <img src={vue_icon} className={style.icon} />
                   </span>{" "}
-                  Vue.js I'm using{" "}
+                  Vue.js and I'm using{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
