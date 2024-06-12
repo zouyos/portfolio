@@ -106,6 +106,20 @@ function App() {
                   Redux
                 </p>
                 <p>
+                  I also love working with{" "}
+                  <span>
+                    <img src={vue_icon} className={style.icon} />
+                  </span>{" "}
+                  Vue.js and recently I've started coding with{" "}
+                  <span>
+                    <img
+                      src={THEME[themeMode].next_icon}
+                      className={style.icon}
+                    />
+                  </span>{" "}
+                  Next.js
+                </p>
+                <p>
                   I try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
@@ -113,7 +127,7 @@ function App() {
                   TypeScript as much as I can on my newest projects
                 </p>
                 <p>
-                  I like to make sure that the projects I work on are user
+                  And I always make sure that the projects I work on are user
                   friendly
                 </p>
                 <p>🐵</p>
