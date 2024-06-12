@@ -21,7 +21,6 @@ const THEME = {
     avatar: avatar_glow,
     github_icon: github_icon_white,
     react_icon: react_icon,
-    next_icon: next_icon_white,
   },
   light: {
     primaryColor: "#a04000",
@@ -33,7 +32,6 @@ const THEME = {
     avatar: avatar,
     github_icon: github_icon_dark,
     react_icon: react_icon_dark,
-    next_icon: next_icon,
   },
 };
 

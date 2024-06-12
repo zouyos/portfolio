@@ -1,6 +1,5 @@
 import Avatar from "./components/Avatar/Avatar";
 import redux_icon from "./assets/img/redux-icon.png";
-import vue_icon from "./assets/img/vue-js-icon.png";
 import ts_icon from "./assets/img/ts-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
@@ -106,20 +105,6 @@ function App() {
                   Redux
                 </p>
                 <p>
-                  I also love working with{" "}
-                  <span>
-                    <img src={vue_icon} className={style.icon} />
-                  </span>{" "}
-                  Vue.js and recently I've started coding with{" "}
-                  <span>
-                    <img
-                      src={THEME[themeMode].next_icon}
-                      className={style.icon}
-                    />
-                  </span>{" "}
-                  Next.js
-                </p>
-                <p>
                   I try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
@@ -127,8 +112,8 @@ function App() {
                   TypeScript as much as I can on my newest projects
                 </p>
                 <p>
-                  And I always make sure that the projects I work on are user
-                  friendly
+                  And I always make sure that the projects I work on are « user
+                  friendly »
                 </p>
                 <p>🐵</p>
               </div>
