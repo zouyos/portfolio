@@ -5,8 +5,6 @@ import avatar from "../assets/img/avatar.png";
 import avatar_glow from "../assets/img/avatar-glow.png";
 import github_icon_white from "../assets/img/github-icon-white.png";
 import github_icon_dark from "../assets/img/github-icon-dark.png";
-import next_icon from "../assets/img/next-js-icon.png";
-import next_icon_white from "../assets/img/next-js-icon-white.png";
 
 const ThemeModeContext = createContext("dark");
 
