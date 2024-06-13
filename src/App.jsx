@@ -87,7 +87,7 @@ function App() {
               <hr />
               <div className={`${style.description} lh-lg`}>
                 <p>
-                  Hi I'm Zouyos, a frontend developer with a bachelor level
+                  Hi I'm Zouyos, a frontend developer holder of a bachelor level
                   degree
                 </p>
                 <p>
@@ -112,8 +112,8 @@ function App() {
                   TypeScript as much as I can on my newest projects
                 </p>
                 <p>
-                  And I always make sure that the projects I work on are « user
-                  friendly »
+                  And always make sure that the projects I work on are « User
+                  Friendly »
                 </p>
                 <p>🐵</p>
               </div>
