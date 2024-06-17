@@ -112,8 +112,8 @@ function App() {
                   TypeScript as much as I can on my newest projects
                 </p>
                 <p>
-                  And always make sure that the projects I work on are « User
-                  Friendly »
+                  And always make sure that the projects I work on are « user
+                  friendly »
                 </p>
                 <p>🐵</p>
               </div>
