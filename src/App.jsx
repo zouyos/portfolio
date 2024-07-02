@@ -1,6 +1,7 @@
 import Avatar from "./components/Avatar/Avatar";
 import redux_icon from "./assets/img/redux-icon.png";
 import ts_icon from "./assets/img/ts-icon.png";
+import vue_icon from "./assets/img/vue-js-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
 import { projects } from "../data";
@@ -103,6 +104,13 @@ function App() {
                     <img src={redux_icon} className={style.icon} />
                   </span>{" "}
                   Redux
+                </p>
+                <p>
+                  I also love working with{" "}
+                  <span>
+                    <img src={vue_icon} className={style.icon} />
+                  </span>{" "}
+                  Vue.js
                 </p>
                 <p>
                   I try to use{" "}
