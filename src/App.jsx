@@ -1,7 +1,7 @@
 import Avatar from "./components/Avatar/Avatar";
 import redux_icon from "./assets/img/redux-icon.png";
 import ts_icon from "./assets/img/ts-icon.png";
-import vue_icon from "./assets/img/vue-js-icon.png";
+import tailwind_icon from "./assets/img/tailwind-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
 import { projects } from "../data";
@@ -106,21 +106,18 @@ function App() {
                   Redux
                 </p>
                 <p>
-                  I love working with{" "}
-                  <span>
-                    <img src={vue_icon} className={style.icon} />
-                  </span>{" "}
-                  Vue.js as well
-                </p>
-                <p>
                   I also try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
-                  TypeScript as much as I can on my newest projects
+                  TypeScript and{" "}
+                  <span>
+                    <img src={tailwind_icon} className={style.icon} />
+                  </span>{" "}
+                  Tailwind CSS on my newest projects
                 </p>
                 <p>
-                  And always make sure that the projects I work on are « user
+                  And I always make sure that the projects I work on are « user
                   friendly »
                 </p>
                 <p>🐵</p>
