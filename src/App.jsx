@@ -117,7 +117,7 @@ function App() {
                   Tailwind CSS on my newest projects
                 </p>
                 <p>
-                  And I always make sure that the projects I work on are « user
+                  And always make sure that the projects I work on are « user
                   friendly »
                 </p>
                 <p>🐵</p>
