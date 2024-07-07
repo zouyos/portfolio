@@ -106,15 +106,11 @@ function App() {
                   Redux
                 </p>
                 <p>
-                  I also try to use{" "}
+                  I try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
-                  TypeScript and{" "}
-                  <span>
-                    <img src={tailwind_icon} className={style.icon} />
-                  </span>{" "}
-                  Tailwind CSS on my newest projects
+                  TypeScript as much as I can on my newest projects
                 </p>
                 <p>
                   And always make sure that the projects I work on are « user
