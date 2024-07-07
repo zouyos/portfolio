@@ -10,7 +10,8 @@ import linkedin_icon from "./assets/img/linkedin-icon.png";
 import spotify_icon from "./assets/img/spotify-icon.png";
 import { THEME, ThemeModeContext } from "./contexts/ThemeModeContext";
 import { Form } from "react-bootstrap";
-import { MoonFill, Sun } from "react-bootstrap-icons";
+import { SunIcon, MoonIcon } from "@heroicons/react/16/solid";
+import { Switch as HeadlessSwitch } from "@headlessui/react";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -40,33 +41,39 @@ function App() {
   return (
     <ThemeModeContext.Provider value={{ themeMode, setThemeMode }}>
       <div
-        className={`container-fluid ${style.main_container}`}
+        className={` ${style.main_container}`}
         style={{
           color: THEME[themeMode].primaryColor,
           backgroundColor: THEME[themeMode].primaryBackgroundColor,
         }}
       >
-        <div className='row h-100'>
+        <div className='flex flex-wrap h:1'>
           <div
-            className={`col-sm-12 col-md-3 ${style.side_bar}`}
+            className={`w-full sm:w-3/3 md:w-1/3 ${style.side_bar}`}
             style={{
               color: THEME[themeMode].primaryColor,
               backgroundColor: THEME[themeMode].primaryBackgroundColor,
               borderColor: THEME[themeMode].borderColor,
             }}
           >
-            <div>
-              <Form className='d-flex align-items-center'>
-                <Sun size={17} style={{ marginRight: "10px" }} />
-                <Form.Check
-                  type='switch'
-                  id='theme-switch'
-                  checked={themeMode === "dark"}
-                  value={themeMode}
-                  onChange={toggleThemeMode}
+            <div className='flex flex-row'>
+              <SunIcon className='h-5 w-5 mr-2' />
+              <HeadlessSwitch
+                checked={themeMode === "dark"}
+                value={themeMode}
+                onChange={toggleThemeMode}
+                className={`${
+                  themeMode === "dark" ? "bg-blue-600" : "bg-gray-200"
+                }
+        relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
+              >
+                <span
+                  className={`${
+                    themeMode === "dark" ? "translate-x-6" : "translate-x-1"
+                  } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
                 />
-                <MoonFill className='ms-1' />
-              </Form>
+              </HeadlessSwitch>
+              <MoonIcon className='h-5 w-5 ml-2' />
             </div>
             <Avatar img={THEME[themeMode].avatar} title='Zouyos' />
             <div
@@ -86,12 +93,12 @@ function App() {
                 React Developer
               </h2>
               <hr />
-              <div className={`${style.description} lh-lg`}>
-                <p>
+              <div className={`${style.description} leading-loose my-5`}>
+                <p className='my-4'>
                   Hi I'm Zouyos, a frontend developer holder of a bachelor level
                   degree
                 </p>
-                <p>
+                <p className='my-4'>
                   I mainly work with{" "}
                   <span>
                     <img
@@ -105,14 +112,18 @@ function App() {
                   </span>{" "}
                   Redux
                 </p>
-                <p>
-                  I try to use{" "}
+                <p className='my-4'>
+                  I also try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
-                  TypeScript as much as I can on my newest projects
+                  TypeScript and{" "}
+                  <span>
+                    <img src={tailwind_icon} className={style.icon} />
+                  </span>{" "}
+                  Tailwind CSS on my newest projects
                 </p>
-                <p>
+                <p className='my-4'>
                   And always make sure that the projects I work on are « user
                   friendly »
                 </p>
@@ -120,8 +131,8 @@ function App() {
               </div>
               <hr />
               <div className={style.social}>
-                <h4 className='mb-3 fw-bold'>Social</h4>
-                <div className='d-flex justify-content-center align-items-center'>
+                <p className='mb-3 font-semibold text-2xl'>Social</p>
+                <div className='flex justify-center items-center'>
                   <a
                     href='https://www.linkedin.com/in/hamza-benketaf/'
                     target='__blank'
@@ -150,14 +161,14 @@ function App() {
               </div>
             </div>
           </div>
-          <div className={`col-sm-12 col-md-9 ${style.workspace}`}>
+          <div className={`w-full sm:w-3/3 md:w-2/3 ${style.workspace}`}>
             <div
               className={style.cards_container}
               style={{
                 backgroundColor: THEME[themeMode].secondaryBackgroundColor,
               }}
             >
-              <div className='fs-4 fw-bold'>Projects</div>
+              <h4 className='font-semibold text-2xl mb-3'>Projects</h4>
               <hr />
               <ProjectList
                 projects={projects}
@@ -171,29 +182,29 @@ function App() {
                 backgroundColor: THEME[themeMode].primaryBackgroundColor,
               }}
             >
-              <div className='fs-4 fw-bold'>Description</div>
+              <p className='font-semibold text-2xl mb-3'>Description</p>
               <hr />
               {selectedProject === null ? (
                 <div
-                  className='para text-center italic mt-5 mb-4'
+                  className='para text-center italic mt-10 mb-4'
                   style={{ color: THEME[themeMode].secondaryColor }}
                 >
                   Click on a project to display information
                 </div>
               ) : (
                 <div className='my-3'>
-                  <p className='fs-5'>
+                  <p className='text-lg mb-2'>
                     Name of project:
                     <span
-                      className='para fs-6'
+                      className='para text-base'
                       style={{ color: THEME[themeMode].secondaryColor }}
                     >
                       {" " + selectedProject.name}
                     </span>
                   </p>
-                  <p className='fs-5 mb-0'>Description:</p>
+                  <p className='mb-0 text-lg'>Description:</p>
                   <pre
-                    className='para fs-6 text-break'
+                    className='para break-words mb-2'
                     style={{
                       whiteSpace: "pre-wrap",
                       color: THEME[themeMode].secondaryColor,
@@ -201,13 +212,13 @@ function App() {
                   >
                     {selectedProject.description}
                   </pre>
-                  <p className='d-flex'>
-                    <span className='fs-5 me-1'>Developed with: </span>
+                  <div className='flex'>
+                    <p className='mr-1 my-2 text-lg'>Developed with: </p>
                     {selectedProject.techs.map((tech, i) => {
                       return (
                         <span
                           key={tech.name + i}
-                          className='d-flex align-items-center flex-wrap'
+                          className='flex items-center flex-wrap'
                           style={{ color: THEME[themeMode].secondaryColor }}
                         >
                           {tech.icon && (
@@ -222,7 +233,7 @@ function App() {
                               className={`${style.icon} me-1`}
                             />
                           )}
-                          <span className='para me-1 text-wrap'>
+                          <span className='para mr-1 text-wrap'>
                             {i !== selectedProject.techs.length - 1
                               ? tech.name + " / "
                               : tech.name}
@@ -230,11 +241,11 @@ function App() {
                         </span>
                       );
                     })}
-                  </p>
-                  <p className='fs-5'>
+                  </div>
+                  <p className='text-lg my-2'>
                     Creation date:
                     <span
-                      className='para fs-6'
+                      className='para text-base'
                       style={{ color: THEME[themeMode].secondaryColor }}
                     >
                       {" " +

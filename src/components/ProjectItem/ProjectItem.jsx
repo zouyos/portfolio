@@ -1,4 +1,3 @@
-import { Button } from "react-bootstrap";
 import style from "./style.module.css";
 import { useContext, useState } from "react";
 import { ThemeModeContext, THEME } from "../../contexts/ThemeModeContext";
@@ -41,40 +40,44 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => onClick(project)}
     >
-      <div className='d-flex justify-content-center mb-2'>
+      <div className='flex justify-center mb-2'>
         <img src={project.image} className={style.img} />
       </div>
-      <h3
+      <p
+        className='text-2xl'
         style={{
           color: THEME[themeMode].primaryColor,
         }}
       >
         {project.name}
-      </h3>
+      </p>
       <p
-        className={`para ${style.desc}`}
+        className={`para my-3 ${style.desc}`}
         style={{
           color: THEME[themeMode].secondaryColor,
         }}
       >
         {project.short_description}
       </p>
-      <Button
-        variant='primary'
-        className='me-2 visit'
-        onClick={handleLinkClick}
-      >
-        Visit
-      </Button>
-      <Button variant='secondary' className='github' onClick={handleLinkClick}>
-        GitHub
-      </Button>
-      <hr />
+      <div className='mb-5'>
+        <button
+          className='bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 mr-2 visit'
+          onClick={handleLinkClick}
+        >
+          Visit
+        </button>
+        <button
+          className='bg-gray-500 text-white font-medium px-4 py-2 rounded-md hover:bg-gray-600 github'
+          onClick={handleLinkClick}
+        >
+          GitHub
+        </button>
+      </div>
+      <hr className='my-3' />
       <div
-        className='pb-0'
+        className='pb-0 text-semibold text-lg'
         style={{
           color: THEME[themeMode].primaryColor,
-          fontWeight: "semi-bold",
         }}
       >
         {formatDate(new Date(project.created_at))}
