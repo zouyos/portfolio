@@ -47,7 +47,7 @@ function App() {
           backgroundColor: THEME[themeMode].primaryBackgroundColor,
         }}
       >
-        <div className='flex flex-wrap h:1'>
+        <div className='flex flex-wrap min-h-screen'>
           <div
             className={`w-full sm:w-3/3 md:w-1/3 ${style.side_bar}`}
             style={{
