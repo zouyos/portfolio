@@ -186,7 +186,7 @@ function App() {
               <hr />
               {selectedProject === null ? (
                 <div
-                  className='para text-center italic mt-10 mb-4'
+                  className='para text-center italic mt-8 mb-4'
                   style={{ color: THEME[themeMode].secondaryColor }}
                 >
                   Click on a project to display information
@@ -202,7 +202,7 @@ function App() {
                       {" " + selectedProject.name}
                     </span>
                   </p>
-                  <p className='mb-0 text-lg'>Description:</p>
+                  <p className='mb-0 text-lg h-5/5'>Description:</p>
                   <pre
                     className='para break-words mb-2'
                     style={{
