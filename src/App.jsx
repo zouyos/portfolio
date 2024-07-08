@@ -49,7 +49,7 @@ function App() {
       >
         <div className='flex flex-wrap min-h-screen'>
           <div
-            className={`w-full sm:w-3/3 md:w-1/3 ${style.side_bar}`}
+            className={`w-full sm:w-4/4 md:w-1/4 ${style.side_bar}`}
             style={{
               color: THEME[themeMode].primaryColor,
               backgroundColor: THEME[themeMode].primaryBackgroundColor,
@@ -161,7 +161,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className={`w-full sm:w-3/3 md:w-2/3 ${style.workspace}`}>
+          <div className={`w-full sm:w-4/4 md:w-3/4 ${style.workspace}`}>
             <div
               className={style.cards_container}
               style={{
