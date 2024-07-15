@@ -1,6 +1,7 @@
 import Avatar from "./components/Avatar/Avatar";
 import redux_icon from "./assets/img/redux-icon.png";
 import ts_icon from "./assets/img/ts-icon.png";
+import vue_icon from "./assets/img/vue-icon.png";
 import tailwind_icon from "./assets/img/tailwind-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
@@ -9,7 +10,6 @@ import { useContext, useEffect, useState } from "react";
 import linkedin_icon from "./assets/img/linkedin-icon.png";
 import spotify_icon from "./assets/img/spotify-icon.png";
 import { THEME, ThemeModeContext } from "./contexts/ThemeModeContext";
-import { Form } from "react-bootstrap";
 import { SunIcon, MoonIcon } from "@heroicons/react/16/solid";
 import { Switch as HeadlessSwitch } from "@headlessui/react";
 
@@ -113,7 +113,14 @@ function App() {
                   Redux
                 </p>
                 <p className='my-4'>
-                  I also try to use{" "}
+                  I also love working with{" "}
+                  <span>
+                    <img src={vue_icon} className={style.icon} />
+                  </span>{" "}
+                  Vue.js
+                </p>
+                <p className='my-4'>
+                  I try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
