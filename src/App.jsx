@@ -9,7 +9,6 @@ import { useContext, useEffect, useState } from "react";
 import linkedin_icon from "./assets/img/linkedin-icon.png";
 import spotify_icon from "./assets/img/spotify-icon.png";
 import { THEME, ThemeModeContext } from "./contexts/ThemeModeContext";
-import { Form } from "react-bootstrap";
 import { SunIcon, MoonIcon } from "@heroicons/react/16/solid";
 import { Switch as HeadlessSwitch } from "@headlessui/react";
 
