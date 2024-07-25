@@ -58,7 +58,7 @@ export const projects = [
     image: pokedecks,
     visit_link: "https://poke-decks-game.vercel.app/",
     github_link: "https://github.com/zouyos/poke-decks",
-    created_at: new Date("2024-02"),
+    created_at: new Date("2024-03"),
   },
   {
     id: 4,
@@ -70,6 +70,6 @@ export const projects = [
     image: notomatic,
     visit_link: "https://notomatic-note-manager.vercel.app/",
     github_link: "https://github.com/zouyos/notomatic",
-    created_at: new Date("2024-03"),
+    created_at: new Date("2024-04"),
   },
 ];

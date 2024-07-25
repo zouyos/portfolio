@@ -94,8 +94,8 @@ function App() {
               <hr />
               <div className={`${style.description} leading-loose my-5`}>
                 <p className='my-4'>
-                  Hi I'm Zouyos, a frontend developer holder of a bachelor level
-                  degree
+                  Hi I&apos;m Zouyos, a frontend developer holder of a bachelor
+                  level degree
                 </p>
                 <p className='my-4'>
                   I mainly work with{" "}
