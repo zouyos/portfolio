@@ -13,9 +13,17 @@ import { SunIcon, MoonIcon } from "@heroicons/react/16/solid";
 import { Switch as HeadlessSwitch } from "@headlessui/react";
 
 function App() {
-  const [selectedProject, setSelectedProject] = useState(null);
   const initialThemeMode = useContext(ThemeModeContext);
-  const [themeMode, setThemeMode] = useState(initialThemeMode);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [themeMode, setThemeMode] = useState(() => {
+    return localStorage.getItem("themeMode")
+      ? JSON.parse(localStorage.getItem("themeMode"))
+      : initialThemeMode;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("themeMode", JSON.stringify(themeMode));
+  }, [themeMode]);
 
   function handleProjectClick(project) {
     setSelectedProject(project);
@@ -23,19 +31,7 @@ function App() {
 
   function toggleThemeMode() {
     setThemeMode(themeMode === "dark" ? "light" : "dark");
-    localStorage.setItem(
-      "themeMode",
-      JSON.stringify(themeMode === "dark" ? "light" : "dark")
-    );
   }
-
-  useEffect(() => {
-    setThemeMode(
-      localStorage.getItem("themeMode")
-        ? JSON.parse(localStorage.getItem("themeMode"))
-        : "dark"
-    );
-  }, [themeMode]);
 
   return (
     <ThemeModeContext.Provider value={{ themeMode, setThemeMode }}>
