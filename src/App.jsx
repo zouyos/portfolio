@@ -8,6 +8,7 @@ import { projects } from "../data";
 import { useContext, useEffect, useState } from "react";
 import linkedin_icon from "./assets/img/linkedin-icon.png";
 import spotify_icon from "./assets/img/spotify-icon.png";
+import instagram_icon from "./assets/img/instagram-icon.png";
 import { THEME, ThemeModeContext } from "./contexts/ThemeModeContext";
 import { SunIcon, MoonIcon } from "@heroicons/react/16/solid";
 import { Switch as HeadlessSwitch } from "@headlessui/react";
@@ -151,6 +152,13 @@ function App() {
                     className='mx-2'
                   >
                     <img src={spotify_icon} className={style.icon} />
+                  </a>
+                  <a
+                    href='https://www.instagram.com/zouyos/'
+                    target='__blank'
+                    className='mx-2'
+                  >
+                    <img src={instagram_icon} className={style.icon} />
                   </a>
                 </div>
               </div>
