@@ -249,7 +249,7 @@ function App() {
                   >
                     {selectedProject.description}
                   </pre>
-                  <div className='flex'>
+                  <div className='flex flex-wrap'>
                     <p className='mr-1 my-2 text-lg'>Developed with: </p>
                     {selectedProject.techs.map((tech, i) => {
                       return (
