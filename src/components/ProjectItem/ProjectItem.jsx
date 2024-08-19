@@ -60,12 +60,14 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
         {project.short_description}
       </p>
       <div className='mb-5'>
-        <button
-          className='bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 mr-2 visit'
-          onClick={handleLinkClick}
-        >
-          Visit
-        </button>
+        {project.visit_link && (
+          <button
+            className='bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 mr-2 visit'
+            onClick={handleLinkClick}
+          >
+            Visit
+          </button>
+        )}
         <button
           className='bg-gray-500 text-white font-medium px-4 py-2 rounded-md hover:bg-gray-600 github'
           onClick={handleLinkClick}

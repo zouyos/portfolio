@@ -1,6 +1,11 @@
 import Avatar from "./components/Avatar/Avatar";
 import redux_icon from "./assets/img/redux-icon.png";
+import bootstrap_icon from "./assets/img/bootstrap-icon.png";
+import vue_icon from "./assets/img/vue-icon.png";
+import spring_icon from "./assets/img/spring-icon.png";
+import node_icon from "./assets/img/node-icon.png";
 import ts_icon from "./assets/img/ts-icon.png";
+import sass_icon from "./assets/img/sass-icon.png";
 import tailwind_icon from "./assets/img/tailwind-icon.png";
 import style from "./style.module.css";
 import ProjectList from "./components/ProjectList/ProjectList";
@@ -90,8 +95,8 @@ function App() {
               <hr />
               <div className={`${style.description} leading-loose my-5`}>
                 <p className='my-4'>
-                  Hi I&apos;m Zouyos, a frontend developer holder of a bachelor
-                  level degree
+                  Hi I&apos;m Zouyos, a more-into-frontend fullstack developer,
+                  holder of a bachelor level degree
                 </p>
                 <p className='my-4'>
                   I mainly work with{" "}
@@ -101,26 +106,63 @@ function App() {
                       className={style.icon}
                     />
                   </span>{" "}
-                  React and{" "}
+                  React,{" "}
                   <span>
                     <img src={redux_icon} className={style.icon} />
                   </span>{" "}
-                  Redux
+                  Redux and
+                  <span>
+                    {" "}
+                    <img src={bootstrap_icon} className={style.icon} />
+                  </span>{" "}
+                  Bootstrap
+                </p>
+                <p>
+                  I love working with{" "}
+                  <span>
+                    <img src={vue_icon} className={style.icon} />
+                  </span>{" "}
+                  Vue.js as well
                 </p>
                 <p className='my-4'>
                   I try to use{" "}
                   <span>
                     <img src={ts_icon} className={style.icon} />
                   </span>{" "}
-                  TypeScript and{" "}
+                  TypeScript on my newest projects, and I can work with{" "}
+                  <span>
+                    <img src={sass_icon} className={style.icon} />
+                  </span>{" "}
+                  Sass or{" "}
                   <span>
                     <img src={tailwind_icon} className={style.icon} />
                   </span>{" "}
-                  Tailwind CSS on my newest projects
+                  Tailwind CSS
+                </p>
+                <p>
+                  I also have a backend background with{" "}
+                  <span>
+                    <img
+                      src={THEME[themeMode].symfony_icon}
+                      className={style.icon}
+                    />
+                  </span>{" "}
+                  Symfony and{" "}
+                  <span>
+                    <img src={spring_icon} className={style.icon} />
+                  </span>{" "}
+                  Spring Boot, and recently I&apos;ve started coding with{" "}
+                  <span>
+                    <img src={node_icon} className={style.icon} />
+                  </span>{" "}
+                  Node.js
                 </p>
                 <p className='my-4'>
-                  And I always make sure that the projects I work on are « user
-                  friendly »
+                  But I&apos;m really more into client-side development
+                </p>
+                <p className='my-4'>
+                  I love making sure the projects I work on are « user friendly
+                  »
                 </p>
                 <p>🐵</p>
               </div>
