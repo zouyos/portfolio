@@ -1,6 +1,6 @@
-import style from "./style.module.css";
-import { useContext, useState } from "react";
-import { ThemeModeContext, THEME } from "../../contexts/ThemeModeContext";
+import style from './style.module.css';
+import { useContext, useState } from 'react';
+import { ThemeModeContext, THEME } from '../../contexts/ThemeModeContext';
 
 const ProjectItem = ({ project, onClick, isSelected }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -8,22 +8,28 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
 
   function formatDate(date) {
     const formattedDate = date
-      .toLocaleString("en-US", {
-        month: "short",
-        year: "numeric",
+      .toLocaleString('en-US', {
+        month: 'short',
+        year: 'numeric',
       })
       .toLowerCase();
-    const parts = formattedDate.split(" ");
+    const parts = formattedDate.split(' ');
     return `${parts[0]}. ${parts[1]}`;
   }
 
   const handleLinkClick = (e) => {
     e.stopPropagation();
-    if (e.target.classList.contains("visit")) {
-      window.open(project.visit_link, "_blank");
+    if (e.target.classList.contains('visit')) {
+      window.open(project.visit_link, '_blank');
     }
-    if (e.target.classList.contains("github")) {
-      window.open(project.github_link, "_blank");
+    if (e.target.classList.contains('github_link')) {
+      window.open(project.github_link, '_blank');
+    }
+    if (e.target.classList.contains('github_front')) {
+      window.open(project.github.front, '_blank');
+    }
+    if (e.target.classList.contains('github_back')) {
+      window.open(project.github.back, '_blank');
     }
   };
 
@@ -68,12 +74,30 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
             Visit
           </button>
         )}
-        <button
-          className='bg-gray-500 text-white font-medium px-4 py-2 rounded-md hover:bg-gray-600 github'
-          onClick={handleLinkClick}
-        >
-          GitHub
-        </button>
+        {project.github_link && (
+          <button
+            className='bg-gray-500 text-white font-medium px-4 py-2 rounded-md hover:bg-gray-600 github_link'
+            onClick={handleLinkClick}
+          >
+            Github
+          </button>
+        )}
+        {project.github && (
+          <>
+            <button
+              className='bg-gray-500 text-white font-medium px-4 py-2 mr-2 rounded-md hover:bg-gray-600 github_front'
+              onClick={handleLinkClick}
+            >
+              GitHub Front
+            </button>
+            <button
+              className='bg-gray-500 text-white font-medium px-4 py-2 rounded-md hover:bg-gray-600 github_back'
+              onClick={handleLinkClick}
+            >
+              GitHub Back
+            </button>
+          </>
+        )}
       </div>
       <hr className='my-3' />
       <div

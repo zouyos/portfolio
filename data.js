@@ -157,7 +157,10 @@ export const projects = [
     techs: [techs.node, techs.react, techs.redux, techs.bootstrap],
     image: notomatic,
     visit_link: 'https://notomatic-note-manager.vercel.app/',
-    github_link: 'https://github.com/zouyos/notomatic',
+    github: {
+      front: 'https://github.com/zouyos/notomatic',
+      back: 'https://github.com/zouyos/notomatic-api-node',
+    },
     created_at: new Date('2024-04'),
   },
 ];
