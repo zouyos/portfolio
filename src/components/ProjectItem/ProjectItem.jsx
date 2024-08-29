@@ -68,7 +68,7 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
       <div className='mb-5'>
         {project.visit_link && (
           <button
-            className='bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 mr-2 visit'
+            className='bg-blue-500 text-white px-3 py-2 my-1 rounded-md hover:bg-blue-600 mr-2 visit'
             onClick={handleLinkClick}
           >
             Visit
@@ -76,7 +76,7 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
         )}
         {project.github_link && (
           <button
-            className='bg-gray-500 text-white font-medium px-4 py-2 rounded-md hover:bg-gray-600 github_link'
+            className='bg-gray-500 text-white font-medium px-4 py-2 my-1 rounded-md hover:bg-gray-600 github_link'
             onClick={handleLinkClick}
           >
             Github
@@ -85,13 +85,13 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
         {project.github && (
           <>
             <button
-              className='bg-gray-500 text-white font-medium px-4 py-2 mr-2 rounded-md hover:bg-gray-600 github_front'
+              className='bg-gray-500 text-white font-medium px-4 py-2 my-1 mr-2 rounded-md hover:bg-gray-600 github_front'
               onClick={handleLinkClick}
             >
               GitHub Front
             </button>
             <button
-              className='bg-gray-500 text-white font-medium px-4 py-2 rounded-md hover:bg-gray-600 github_back'
+              className='bg-gray-500 text-white font-medium px-4 py-2 my-1 rounded-md hover:bg-gray-600 github_back'
               onClick={handleLinkClick}
             >
               GitHub Back
