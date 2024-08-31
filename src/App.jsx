@@ -1,33 +1,33 @@
-import Avatar from "./components/Avatar/Avatar";
-import redux_icon from "./assets/img/redux-icon.png";
-import bootstrap_icon from "./assets/img/bootstrap-icon.png";
-import vue_icon from "./assets/img/vue-icon.png";
-import spring_icon from "./assets/img/spring-icon.png";
-import node_icon from "./assets/img/node-icon.png";
-import ts_icon from "./assets/img/ts-icon.png";
-import sass_icon from "./assets/img/sass-icon.png";
-import tailwind_icon from "./assets/img/tailwind-icon.png";
-import style from "./style.module.css";
-import ProjectList from "./components/ProjectList/ProjectList";
-import { projects } from "../data";
-import { useContext, useEffect, useState } from "react";
-import linkedin_icon from "./assets/img/linkedin-icon.png";
-import spotify_icon from "./assets/img/spotify-icon.png";
-import { THEME, ThemeModeContext } from "./contexts/ThemeModeContext";
-import { SunIcon, MoonIcon } from "@heroicons/react/16/solid";
-import { Switch as HeadlessSwitch } from "@headlessui/react";
+import Avatar from './components/Avatar/Avatar';
+import redux_icon from './assets/img/redux-icon.png';
+import bootstrap_icon from './assets/img/bootstrap-icon.png';
+import vue_icon from './assets/img/vue-icon.png';
+import spring_icon from './assets/img/spring-icon.png';
+import node_icon from './assets/img/node-icon.png';
+import ts_icon from './assets/img/ts-icon.png';
+import sass_icon from './assets/img/sass-icon.png';
+import tailwind_icon from './assets/img/tailwind-icon.png';
+import style from './style.module.css';
+import ProjectList from './components/ProjectList/ProjectList';
+import { projects } from '../data';
+import { useContext, useEffect, useState } from 'react';
+import linkedin_icon from './assets/img/linkedin-icon.png';
+import spotify_icon from './assets/img/spotify-icon.png';
+import { THEME, ThemeModeContext } from './contexts/ThemeModeContext';
+import { SunIcon, MoonIcon } from '@heroicons/react/16/solid';
+import { Switch as HeadlessSwitch } from '@headlessui/react';
 
 function App() {
   const initialThemeMode = useContext(ThemeModeContext);
   const [selectedProject, setSelectedProject] = useState(null);
   const [themeMode, setThemeMode] = useState(() => {
-    return localStorage.getItem("themeMode")
-      ? JSON.parse(localStorage.getItem("themeMode"))
+    return localStorage.getItem('themeMode')
+      ? JSON.parse(localStorage.getItem('themeMode'))
       : initialThemeMode;
   });
 
   useEffect(() => {
-    localStorage.setItem("themeMode", JSON.stringify(themeMode));
+    localStorage.setItem('themeMode', JSON.stringify(themeMode));
   }, [themeMode]);
 
   function handleProjectClick(project) {
@@ -35,7 +35,7 @@ function App() {
   }
 
   function toggleThemeMode() {
-    setThemeMode(themeMode === "dark" ? "light" : "dark");
+    setThemeMode(themeMode === 'dark' ? 'light' : 'dark');
   }
 
   return (
@@ -59,17 +59,17 @@ function App() {
             <div className='flex flex-row'>
               <SunIcon className='h-5 w-5 mr-2' />
               <HeadlessSwitch
-                checked={themeMode === "dark"}
+                checked={themeMode === 'dark'}
                 value={themeMode}
                 onChange={toggleThemeMode}
                 className={`${
-                  themeMode === "dark" ? "bg-blue-600" : "bg-gray-200"
+                  themeMode === 'dark' ? 'bg-blue-600' : 'bg-gray-200'
                 }
         relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
               >
                 <span
                   className={`${
-                    themeMode === "dark" ? "translate-x-6" : "translate-x-1"
+                    themeMode === 'dark' ? 'translate-x-6' : 'translate-x-1'
                   } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
                 />
               </HeadlessSwitch>
@@ -85,12 +85,12 @@ function App() {
             >
               <h2
                 style={{
-                  fontSize: "30px",
+                  fontSize: '30px',
                   color: THEME[themeMode].secondaryColor,
-                  marginBottom: "20px",
+                  marginBottom: '20px',
                 }}
               >
-                React Developer
+                JavaScript Developer
               </h2>
               <hr />
               <div className={`${style.description} leading-loose my-5`}>
@@ -99,62 +99,62 @@ function App() {
                   holder of a bachelor level degree
                 </p>
                 <p className='my-4'>
-                  I mainly work with{" "}
+                  I mainly work with{' '}
                   <span>
                     <img
                       src={THEME[themeMode].react_icon}
                       className={style.icon}
                     />
-                  </span>{" "}
-                  React,{" "}
+                  </span>{' '}
+                  React,{' '}
                   <span>
                     <img src={redux_icon} className={style.icon} />
-                  </span>{" "}
+                  </span>{' '}
                   Redux and
                   <span>
-                    {" "}
+                    {' '}
                     <img src={bootstrap_icon} className={style.icon} />
-                  </span>{" "}
+                  </span>{' '}
                   Bootstrap
                 </p>
                 <p>
-                  I love working with{" "}
+                  I love working with{' '}
                   <span>
                     <img src={vue_icon} className={style.icon} />
-                  </span>{" "}
+                  </span>{' '}
                   Vue.js as well
                 </p>
                 <p className='my-4'>
-                  I try to use{" "}
+                  I try to use{' '}
                   <span>
                     <img src={ts_icon} className={style.icon} />
-                  </span>{" "}
-                  TypeScript on my newest projects, and I can work with{" "}
+                  </span>{' '}
+                  TypeScript on my newest projects, and I can work with{' '}
                   <span>
                     <img src={sass_icon} className={style.icon} />
-                  </span>{" "}
-                  Sass or{" "}
+                  </span>{' '}
+                  Sass or{' '}
                   <span>
                     <img src={tailwind_icon} className={style.icon} />
-                  </span>{" "}
+                  </span>{' '}
                   Tailwind CSS
                 </p>
                 <p>
-                  I also have a backend background with{" "}
+                  I also have a backend background with{' '}
                   <span>
                     <img
                       src={THEME[themeMode].symfony_icon}
                       className={style.icon}
                     />
-                  </span>{" "}
-                  Symfony and{" "}
+                  </span>{' '}
+                  Symfony and{' '}
                   <span>
                     <img src={spring_icon} className={style.icon} />
-                  </span>{" "}
-                  Spring Boot, and recently I&apos;ve started coding with{" "}
+                  </span>{' '}
+                  Spring Boot, and recently I&apos;ve started coding with{' '}
                   <span>
                     <img src={node_icon} className={style.icon} />
-                  </span>{" "}
+                  </span>{' '}
                   Node.js
                 </p>
                 <p className='my-4'>
@@ -236,14 +236,14 @@ function App() {
                       className='para text-base'
                       style={{ color: THEME[themeMode].secondaryColor }}
                     >
-                      {" " + selectedProject.name}
+                      {' ' + selectedProject.name}
                     </span>
                   </p>
                   <p className='mb-0 text-lg h-5/5'>Description:</p>
                   <pre
                     className='para break-words mb-2'
                     style={{
-                      whiteSpace: "pre-wrap",
+                      whiteSpace: 'pre-wrap',
                       color: THEME[themeMode].secondaryColor,
                     }}
                   >
@@ -261,7 +261,7 @@ function App() {
                           {tech.icon && (
                             <img
                               src={
-                                themeMode === "dark"
+                                themeMode === 'dark'
                                   ? tech.icon.icon_dark
                                   : tech.icon.icon_light
                                   ? tech.icon.icon_light
@@ -272,7 +272,7 @@ function App() {
                           )}
                           <span className='para mr-1 text-wrap'>
                             {i !== selectedProject.techs.length - 1
-                              ? tech.name + " / "
+                              ? tech.name + ' / '
                               : tech.name}
                           </span>
                         </span>
@@ -285,10 +285,10 @@ function App() {
                       className='para text-base'
                       style={{ color: THEME[themeMode].secondaryColor }}
                     >
-                      {" " +
+                      {' ' +
                         new Date(selectedProject.created_at).toLocaleString(
-                          "en-US",
-                          { month: "long", year: "numeric" }
+                          'en-US',
+                          { month: 'long', year: 'numeric' }
                         )}
                     </span>
                   </p>
