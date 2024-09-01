@@ -19,12 +19,13 @@ import { Switch as HeadlessSwitch } from '@headlessui/react';
 
 function App() {
   const initialThemeMode = useContext(ThemeModeContext);
-  const [selectedProject, setSelectedProject] = useState(null);
   const [themeMode, setThemeMode] = useState(() => {
     return localStorage.getItem('themeMode')
       ? JSON.parse(localStorage.getItem('themeMode'))
       : initialThemeMode;
   });
+  const [selectedProject, setSelectedProject] = useState(null);
+  const revertedProjectList = [...projects].reverse();
 
   useEffect(() => {
     localStorage.setItem('themeMode', JSON.stringify(themeMode));
@@ -208,7 +209,7 @@ function App() {
               <h4 className='font-semibold text-2xl mb-3'>Projects</h4>
               <hr />
               <ProjectList
-                projects={projects}
+                projects={revertedProjectList}
                 selectedProject={selectedProject}
                 onClick={handleProjectClick}
               />
