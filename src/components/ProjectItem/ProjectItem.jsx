@@ -1,6 +1,7 @@
 import style from './style.module.css';
 import { useContext, useState } from 'react';
 import { ThemeModeContext, THEME } from '../../contexts/ThemeModeContext';
+import DropDownButton from '../DropDownButton/DropDownButton';
 
 const ProjectItem = ({ project, onClick, isSelected }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -82,22 +83,7 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
             Github
           </button>
         )}
-        {project.github && (
-          <>
-            <button
-              className='bg-gray-500 text-white font-medium px-4 py-2 my-1 mr-2 rounded-md hover:bg-gray-600 github_front'
-              onClick={handleLinkClick}
-            >
-              GitHub Front
-            </button>
-            <button
-              className='bg-gray-500 text-white font-medium px-4 py-2 my-1 rounded-md hover:bg-gray-600 github_back'
-              onClick={handleLinkClick}
-            >
-              GitHub Back
-            </button>
-          </>
-        )}
+        {project.github && <DropDownButton onClick={handleLinkClick} />}
       </div>
       <hr className='my-3' />
       <div
