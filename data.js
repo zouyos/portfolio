@@ -151,7 +151,7 @@ export const projects = [
   {
     id: 6,
     name: 'Notomatic',
-    short_description: 'Note manager developed with React and Redux',
+    short_description: 'Note manager developed with React and Express.js',
     description:
       'This application allows the user to create and manage notes within an intuitive interface.\nThe frontend is coded with React and Redux.\nThe backend is coded with Node.js/Express and is linked to a MongoDB database.\nIt handles authentification, password reset and user notes are encrypted when stored in the database.',
     techs: [techs.node, techs.react, techs.redux, techs.bootstrap],
