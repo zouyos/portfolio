@@ -4,7 +4,10 @@ import { ChevronDownIcon } from '@heroicons/react/16/solid';
 export default function DropDownButton({ onClick }) {
   return (
     <Menu>
-      <MenuButton className='inline-flex items-center gap-2 rounded-md bg-gray-500 py-2 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[open]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white'>
+      <MenuButton
+        className='inline-flex items-center gap-2 rounded-md bg-gray-500 py-2 ps-3 pe-2 text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[open]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white'
+        onClick={(e) => e.stopPropagation()}
+      >
         GitHub
         <ChevronDownIcon className='size-4 fill-white/60' />
       </MenuButton>
