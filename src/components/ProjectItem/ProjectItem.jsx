@@ -19,7 +19,6 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
   }
 
   const handleLinkClick = (e) => {
-    e.stopPropagation();
     if (e.target.classList.contains('visit')) {
       window.open(project.visit_link, '_blank');
     }
