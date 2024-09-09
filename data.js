@@ -89,7 +89,7 @@ export const projects = [
     short_description:
       'TV show advisor developed with React and using TMDB API',
     description:
-      'Based on « The Movie Database » API endpoint listing trending TV shows, this application displays details about the most watched TV show.\nA list of related recommendations is provided, loading details about the selected show when clicked.\nThe application also allows the user to search a TV show within TMDB.\nUnit tests are added with Jest and react-testing library.\n Bootstrap is a library that helps developer deal with CSS classes and provides ready-to-use components',
+      'Based on « The Movie Database » API endpoint listing trending TV shows, this application displays details about the most watched TV show.\nA list of related recommendations is provided, loading details about the selected show when clicked.\nThe application also allows the user to search a TV show within TMDB.\nUnit tests are added with Jest and react-testing library.\nBootstrap is a library that helps developer deal with CSS classes and provides ready-to-use components.',
     techs: [techs.react, techs.bootstrap],
     image: watowatch,
     visit_link: 'https://watowatch-tv-show-advisor.vercel.app/',
@@ -102,7 +102,7 @@ export const projects = [
     short_description:
       'Web application for a showcase site developed with Symfony',
     description:
-      "This application was made for a client while I was self-employed, it informs the user about my client's business and provides a contact form, authentification and mailing feature.\nThe administrator has access to a « Back Office » where they can manage the data, like articles or appointments.\n Symfony is used as a backend language, to create and access data from a database (CRUD)\nThis project follows is the MVC pattern, that emphasizes a separation between the software's logic and the display.\nTwig is used as the template engine",
+      "This application was made for a client while I was self-employed, it informs the user about my client's business and provides a contact form, authentification and mailing feature.\nThe administrator has access to a « Back Office » where they can manage the data, like articles or appointments.\nSymfony is used as a backend language, to create and access data from a database (CRUD)\nThis project follows the MVC pattern, that emphasizes a separation between the software's logic and the display.\nTwig is used as the template engine.",
     techs: [techs.symfony, techs.twig, techs.sass, techs.bootstrap],
     image: NB,
     github_link: 'https://github.com/zouyos/nb-facialiste',
@@ -130,7 +130,7 @@ export const projects = [
     name: 'PlanExam',
     short_description: 'Final project of my bachelor degree exam',
     description:
-      'The idea of this project was to facilitate the organization of a french IT diploma’s exam, by sharing out teachers in exam centers.\nIt contains a CSV file import and reading feature.\nThis project follows is the MVC pattern.\nI also used UML (Unified Modeling Language) that is intended to provide a standard way to visualize the design of a system.\nI used vanilla JS to dynamically call the database when clicking checkboxes.\nThe template engine used is Thymeleaf',
+      'The idea of this project was to facilitate the organization of a french IT diploma’s exam, by sharing out teachers in exam centers.\nIt contains a CSV file import and reading feature.\nThe project follows the MVC pattern.\nI used UML (Unified Modeling Language) that is intended to provide a standard way to visualize the design of a system.\nThe main language is Java and its framework Spring Boot.\nI also used vanilla JS to dynamically call the database when clicking checkboxes.\nThe template engine used is Thymeleaf.',
     techs: [techs.spring_boot_icon, techs.thymeleaf, techs.js, techs.bootstrap],
     image: planexam,
     github_link: 'https://github.com/zouyos/planexam',

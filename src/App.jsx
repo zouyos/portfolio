@@ -268,7 +268,7 @@ function App() {
                                   ? tech.icon.icon_light
                                   : tech.icon.icon_dark
                               }
-                              className={`${style.icon} me-1`}
+                              className={`${style.icon} me-1 my-1`}
                             />
                           )}
                           <span className='para mr-1 text-wrap'>
