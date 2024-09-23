@@ -5,7 +5,6 @@ import vue_icon from './assets/img/vue-icon.png';
 import spring_icon from './assets/img/spring-icon.png';
 import node_icon from './assets/img/node-icon.png';
 import ts_icon from './assets/img/ts-icon.png';
-import sass_icon from './assets/img/sass-icon.png';
 import tailwind_icon from './assets/img/tailwind-icon.png';
 import style from './style.module.css';
 import ProjectList from './components/ProjectList/ProjectList';
@@ -132,10 +131,6 @@ function App() {
                   </span>{' '}
                   TypeScript on my newest projects, and I can work with{' '}
                   <span>
-                    <img src={sass_icon} className={style.icon} />
-                  </span>{' '}
-                  Sass or{' '}
-                  <span>
                     <img src={tailwind_icon} className={style.icon} />
                   </span>{' '}
                   Tailwind CSS
@@ -166,6 +161,7 @@ function App() {
                   »
                 </p>
                 <p>🐵</p>
+                <p>Copyright © 2024 Zouyos</p>
               </div>
               <hr />
               <div className={style.social}>
