@@ -151,17 +151,13 @@ function App() {
                   <span>
                     <img src={node_icon} className={style.icon} />
                   </span>{' '}
-                  Node.js
+                  Node.js/Express
                 </p>
                 <p className='my-4'>
-                  But I&apos;m really more into client-side development
-                </p>
-                <p className='my-4'>
-                  I love making sure the projects I work on are « user friendly
-                  »
+                  I'm also interested in UI/UX because I want to make sure my
+                  projects are « user friendly »
                 </p>
                 <p>🐵</p>
-                <p>Copyright © 2024 Zouyos</p>
               </div>
               <hr />
               <div className={style.social}>
@@ -291,6 +287,12 @@ function App() {
                   </p>
                 </div>
               )}
+            </div>
+            <div className={style.footer}>
+              <hr />
+              <p className='text-xl mt-3 text-center'>
+                Copyright © 2024 Zouyos
+              </p>
             </div>
           </div>
         </div>

@@ -45,9 +45,14 @@
 .cards_description {
   padding: 20px;
   height: 100%;
+  overflow-y: auto;
 }
 
 .icon {
   width: 30px;
   display: inline;
+}
+
+.footer {
+  padding: 20px;
 }
