@@ -2,12 +2,24 @@ import style from './style.module.css';
 import { useContext, useState } from 'react';
 import { ThemeModeContext, THEME } from '../../contexts/ThemeModeContext';
 import DropDownButton from '../DropDownButton/DropDownButton';
+import { Project } from '../../types/types';
 
-const ProjectItem = ({ project, onClick, isSelected }) => {
+type ProjectItemProps = {
+  project: Project | null;
+  onClick: (project: Project | null) => void;
+  isSelected: boolean;
+};
+
+const ProjectItem = ({ project, onClick, isSelected }: ProjectItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
-  const { themeMode } = useContext(ThemeModeContext);
 
-  function formatDate(date) {
+  const context = useContext(ThemeModeContext);
+  if (!context) {
+    throw new Error('ThemeModeContext must be used within a ThemeModeProvider');
+  }
+  const { themeMode } = context;
+
+  function formatDate(date: Date) {
     const formattedDate = date
       .toLocaleString('en-US', {
         month: 'short',
@@ -18,18 +30,17 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
     return `${parts[0]}. ${parts[1]}`;
   }
 
-  const handleLinkClick = (e) => {
-    if (e.target.classList.contains('visit')) {
-      window.open(project.visit_link, '_blank');
-    }
-    if (e.target.classList.contains('github_link')) {
-      window.open(project.github_link, '_blank');
-    }
-    if (e.target.classList.contains('github_front')) {
-      window.open(project.github.front, '_blank');
-    }
-    if (e.target.classList.contains('github_back')) {
-      window.open(project.github.back, '_blank');
+  const handleLinkClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const target = e.target as HTMLElement;
+
+    if (target.classList.contains('visit')) {
+      window.open(project?.visit_link, '_blank');
+    } else if (target.classList.contains('github_link')) {
+      window.open(project?.github_link, '_blank');
+    } else if (target.classList.contains('github_front')) {
+      window.open(project?.github?.front, '_blank');
+    } else if (target.classList.contains('github_back')) {
+      window.open(project?.github?.back, '_blank');
     }
   };
 
@@ -38,8 +49,9 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
       className={style.card}
       style={{
         outline:
-          (isHovered || isSelected) &&
-          `2px solid ${THEME[themeMode].borderHoverColor}`,
+          isHovered || isSelected
+            ? `2px solid ${THEME[themeMode].borderHoverColor}`
+            : undefined,
         backgroundColor: THEME[themeMode].primaryBackgroundColor,
       }}
       onMouseEnter={() => setIsHovered(true)}
@@ -47,7 +59,7 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
       onClick={() => onClick(project)}
     >
       <div className='flex justify-center mb-2'>
-        <img src={project.image} className={style.img} />
+        <img src={project?.image} className={style.img} />
       </div>
       <p
         className='text-2xl'
@@ -55,7 +67,7 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
           color: THEME[themeMode].primaryColor,
         }}
       >
-        {project.name}
+        {project?.name}
       </p>
       <p
         className={`para my-3 ${style.desc}`}
@@ -63,10 +75,10 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
           color: THEME[themeMode].secondaryColor,
         }}
       >
-        {project.short_description}
+        {project?.short_description}
       </p>
       <div className='mb-5'>
-        {project.visit_link && (
+        {project?.visit_link && (
           <button
             className='bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 mr-2 visit'
             onClick={handleLinkClick}
@@ -74,7 +86,7 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
             Visit
           </button>
         )}
-        {project.github_link && (
+        {project?.github_link && (
           <button
             className='bg-gray-500 text-white font-medium px-3 py-2 rounded-md hover:bg-gray-600 github_link'
             onClick={handleLinkClick}
@@ -82,7 +94,7 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
             Github
           </button>
         )}
-        {project.github && <DropDownButton onClick={handleLinkClick} />}
+        {project?.github && <DropDownButton onClick={handleLinkClick} />}
       </div>
       <hr className='my-3' />
       <div
@@ -91,7 +103,7 @@ const ProjectItem = ({ project, onClick, isSelected }) => {
           color: THEME[themeMode].primaryColor,
         }}
       >
-        {formatDate(new Date(project.created_at))}
+        {project && formatDate(new Date(project.created_at))}
       </div>
     </div>
   );

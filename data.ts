@@ -16,6 +16,7 @@ import thymeleaf_icon from './src/assets/img/thymeleaf-icon.png';
 import twig_icon from './src/assets/img/twig-icon.png';
 import sass_icon from './src/assets/img/sass-icon.png';
 import js_icon from './src/assets/img/js-icon.png';
+import { Project } from './src/types/types';
 
 const techs = {
   react: {
@@ -82,7 +83,7 @@ const techs = {
   },
 };
 
-export const projects = [
+export const projects: Project[] = [
   {
     id: 1,
     name: 'Watowatch',

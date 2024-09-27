@@ -7,8 +7,9 @@ import avatar from "../assets/img/avatar.png";
 import avatar_glow from "../assets/img/avatar-glow.png";
 import github_icon_white from "../assets/img/github-icon-white.png";
 import github_icon_dark from "../assets/img/github-icon-dark.png";
+import { type ThemeContextType } from "../types/types";
 
-const ThemeModeContext = createContext("dark");
+const ThemeModeContext = createContext<ThemeContextType | undefined>(undefined);
 
 const THEME = {
   dark: {

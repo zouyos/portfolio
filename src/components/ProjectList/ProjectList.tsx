@@ -1,7 +1,18 @@
+import { Project } from '../../types/types';
 import ProjectItem from '../ProjectItem/ProjectItem';
 import style from './style.module.css';
 
-const ProjectList = ({ selectedProject, projects, onClick }) => {
+type ProjectListProps = {
+  selectedProject: Project | null;
+  projects: Project[];
+  onClick: (project: Project | null) => void;
+};
+
+const ProjectList = ({
+  selectedProject,
+  projects,
+  onClick,
+}: ProjectListProps) => {
   return (
     <div className={style.container}>
       {projects.map((project, i) => {
@@ -10,7 +21,7 @@ const ProjectList = ({ selectedProject, projects, onClick }) => {
             key={project.id}
             style={{
               marginRight: i !== projects.length - 1 ? '35px' : '2px',
-              marginLeft: i === 0 && '2px',
+              marginLeft: i === 0 ? '2px' : undefined,
             }}
           >
             <ProjectItem
