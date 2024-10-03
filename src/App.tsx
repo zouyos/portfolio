@@ -9,22 +9,16 @@ import tailwind_icon from './assets/img/tailwind-icon.png';
 import style from './style.module.css';
 import ProjectList from './components/ProjectList/ProjectList';
 import { projects } from '../data';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import linkedin_icon from './assets/img/linkedin-icon.png';
 import spotify_icon from './assets/img/spotify-icon.png';
-import { THEME, ThemeModeContext } from './contexts/ThemeModeContext';
+import { THEME, useThemeModeContext } from './contexts/ThemeModeContext';
 import { SunIcon, MoonIcon } from '@heroicons/react/16/solid';
 import { Switch as HeadlessSwitch } from '@headlessui/react';
 import { type Project } from './types/types';
 
 function App() {
-  const context = useContext(ThemeModeContext);
-
-  if (!context) {
-    throw new Error('ThemeModeContext must be used within a ThemeModeProvider');
-  }
-
-  const { themeMode, setThemeMode } = context;
+  const { themeMode, setThemeMode } = useThemeModeContext();
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const sortedProjects = [...projects].sort((a: Project, b: Project) => {

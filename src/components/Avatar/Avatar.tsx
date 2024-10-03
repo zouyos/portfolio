@@ -1,6 +1,5 @@
-import { useContext } from 'react';
 import style from './style.module.css';
-import { ThemeModeContext, THEME } from '../../contexts/ThemeModeContext';
+import { THEME, useThemeModeContext } from '@/contexts/ThemeModeContext';
 
 type AvatarProps = {
   img: string;
@@ -8,11 +7,7 @@ type AvatarProps = {
 };
 
 const Avatar = ({ img, title }: AvatarProps) => {
-  const context = useContext(ThemeModeContext);
-  if (!context) {
-    throw new Error('ThemeModeContext must be used within a ThemeModeProvider');
-  }
-  const { themeMode } = context;
+  const { themeMode } = useThemeModeContext();
   return (
     <div className={style.container}>
       <img

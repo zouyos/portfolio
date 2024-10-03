@@ -1,6 +1,6 @@
 import React, { useState, ReactNode, useEffect } from 'react';
 import { ThemeModeContext } from './ThemeModeContext';
-import { type ThemeMode } from '../types/types';
+import { type ThemeMode } from '@/types/types';
 
 type ThemeModeProviderProps = {
   children: ReactNode;

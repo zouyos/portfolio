@@ -1,8 +1,8 @@
 import style from './style.module.css';
-import { useContext, useState } from 'react';
-import { ThemeModeContext, THEME } from '../../contexts/ThemeModeContext';
-import DropDownButton from '../DropDownButton/DropDownButton';
-import { Project } from '../../types/types';
+import { useState } from 'react';
+import { THEME, useThemeModeContext } from '@/contexts/ThemeModeContext';
+import DropDownButton from '@/components/DropDownButton/DropDownButton';
+import { Project } from '@/types/types';
 
 type ProjectItemProps = {
   project: Project | null;
@@ -13,11 +13,7 @@ type ProjectItemProps = {
 const ProjectItem = ({ project, onClick, isSelected }: ProjectItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const context = useContext(ThemeModeContext);
-  if (!context) {
-    throw new Error('ThemeModeContext must be used within a ThemeModeProvider');
-  }
-  const { themeMode } = context;
+  const { themeMode } = useThemeModeContext();
 
   function formatDate(date: Date) {
     const formattedDate = date

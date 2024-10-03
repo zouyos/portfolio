@@ -1,15 +1,23 @@
-import { createContext } from "react";
-import react_icon from "../assets/img/react-icon.png";
-import react_icon_dark from "../assets/img/react-icon-dark.png";
-import symfony_icon from "../assets/img/symfony-icon.png";
-import symfony_icon_white from "../assets/img/symfony-icon-white.png";
-import avatar from "../assets/img/avatar.png";
-import avatar_glow from "../assets/img/avatar-glow.png";
-import github_icon_white from "../assets/img/github-icon-white.png";
-import github_icon_dark from "../assets/img/github-icon-dark.png";
-import { type ThemeContextType } from "../types/types";
+import { createContext, useContext } from "react";
+import react_icon from "@/assets/img/react-icon.png";
+import react_icon_dark from "@/assets/img/react-icon-dark.png";
+import symfony_icon from "@/assets/img/symfony-icon.png";
+import symfony_icon_white from "@/assets/img/symfony-icon-white.png";
+import avatar from "@/assets/img/avatar.png";
+import avatar_glow from "@/assets/img/avatar-glow.png";
+import github_icon_white from "@/assets/img/github-icon-white.png";
+import github_icon_dark from "@/assets/img/github-icon-dark.png";
+import { type ThemeContextType } from "@/types/types";
 
 const ThemeModeContext = createContext<ThemeContextType | undefined>(undefined);
+
+function useThemeModeContext() {
+  const context = useContext(ThemeModeContext);
+  if (!context) {
+    throw new Error('ThemeModeContext must be used within a ThemeModeProvider');
+  }
+  return context
+}
 
 const THEME = {
   dark: {
@@ -38,4 +46,4 @@ const THEME = {
   },
 };
 
-export { ThemeModeContext, THEME };
+export { ThemeModeContext, useThemeModeContext, THEME };

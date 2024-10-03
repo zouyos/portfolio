@@ -1,5 +1,5 @@
-import { Project } from '../../types/types';
-import ProjectItem from '../ProjectItem/ProjectItem';
+import { Project } from '@/types/types';
+import ProjectItem from '@/components/ProjectItem/ProjectItem';
 import style from './style.module.css';
 
 type ProjectListProps = {
