@@ -124,7 +124,7 @@ export const projects: Project[] = [
     image: ispent,
     visit_link: 'https://ispent-expense-tracker.vercel.app/',
     github_link: 'https://github.com/zouyos/expense-tracker',
-    created_at: new Date('2023-08'),
+    created_at: new Date('2023-06'),
   },
   {
     id: 4,
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     image: pokedecks,
     visit_link: 'https://poke-decks-game.vercel.app/',
     github_link: 'https://github.com/zouyos/poke-decks',
-    created_at: new Date('2024-03'),
+    created_at: new Date('2023-11'),
   },
   {
     id: 5,
@@ -147,7 +147,7 @@ export const projects: Project[] = [
     techs: [techs.spring_boot_icon, techs.thymeleaf, techs.js, techs.bootstrap],
     image: planexam,
     github_link: 'https://github.com/zouyos/planexam',
-    created_at: new Date('2023-12'),
+    created_at: new Date('2024-01'),
   },
   {
     id: 6,
@@ -162,6 +162,6 @@ export const projects: Project[] = [
       front: 'https://github.com/zouyos/notomatic',
       back: 'https://github.com/zouyos/notomatic-api-node',
     },
-    created_at: new Date('2024-04'),
+    created_at: new Date('2024-03'),
   },
 ];
