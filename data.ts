@@ -128,17 +128,6 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    name: 'PlanExam',
-    short_description: 'Final project of my bachelor degree exam',
-    description:
-      'The idea of this project was to facilitate the organization of a french IT diploma’s exam, by sharing out teachers in exam centers.\nIt contains a CSV file import and reading feature.\nThe project follows the MVC pattern.\nI used UML (Unified Modeling Language) that is intended to provide a standard way to visualize the design of a system.\nThe main language is Java and its framework Spring Boot.\nI also used vanilla JS to dynamically call the database when clicking checkboxes.\nThe template engine used is Thymeleaf.',
-    techs: [techs.spring_boot_icon, techs.thymeleaf, techs.js, techs.bootstrap],
-    image: planexam,
-    github_link: 'https://github.com/zouyos/planexam',
-    created_at: new Date('2023-12'),
-  },
-  {
-    id: 5,
     name: "Poke'Decks",
     short_description: 'Pokemon fan game developed with React and Custom Hooks',
     description:
@@ -148,6 +137,17 @@ export const projects: Project[] = [
     visit_link: 'https://poke-decks-game.vercel.app/',
     github_link: 'https://github.com/zouyos/poke-decks',
     created_at: new Date('2024-03'),
+  },
+  {
+    id: 5,
+    name: 'PlanExam',
+    short_description: 'Final project of my bachelor degree exam',
+    description:
+      'The idea of this project was to facilitate the organization of a french IT diploma’s exam, by sharing out teachers in exam centers.\nIt contains a CSV file import and reading feature.\nThe project follows the MVC pattern.\nI used UML (Unified Modeling Language) that is intended to provide a standard way to visualize the design of a system.\nThe main language is Java and its framework Spring Boot.\nI also used vanilla JS to dynamically call the database when clicking checkboxes.\nThe template engine used is Thymeleaf.',
+    techs: [techs.spring_boot_icon, techs.thymeleaf, techs.js, techs.bootstrap],
+    image: planexam,
+    github_link: 'https://github.com/zouyos/planexam',
+    created_at: new Date('2023-12'),
   },
   {
     id: 6,
