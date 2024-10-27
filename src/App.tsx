@@ -4,7 +4,6 @@ import bootstrap_icon from './assets/img/bootstrap-icon.png';
 import vue_icon from './assets/img/vue-icon.png';
 import spring_icon from './assets/img/spring-icon.png';
 import node_icon from './assets/img/node-icon.png';
-import ts_icon from './assets/img/ts-icon.png';
 import tailwind_icon from './assets/img/tailwind-icon.png';
 import style from './style.module.css';
 import ProjectList from './components/ProjectList/ProjectList';
@@ -116,19 +115,11 @@ function App() {
                 <span>
                   <img src={vue_icon} className={style.icon} />
                 </span>{' '}
-                Vue.js as well
-              </p>
-              <p className='my-4'>
-                I can work with{' '}
-                <span>
-                  <img src={ts_icon} className={style.icon} />
-                </span>{' '}
-                TypeScript or{' '}
+                Vue.js as well and I can work with{' '}
                 <span>
                   <img src={tailwind_icon} className={style.icon} />
                 </span>{' '}
-                Tailwind CSS if needed (this Portfolio is made with these
-                libraries)
+                Tailwind CSS if needed
               </p>
               <p>
                 I also have a backend background with{' '}
