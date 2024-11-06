@@ -108,7 +108,17 @@ function App() {
                 <span>
                   <img src={redux_icon} className={style.icon} />
                 </span>{' '}
-                Redux, and I often use{' '}
+                Redux
+              </p>
+              <p>
+                I love using{' '}
+                <span>
+                  <img src={vue_icon} className={style.icon} />
+                </span>{' '}
+                Vue.js as well
+              </p>
+              <p>
+                Most of my front-end projects use libraries like{' '}
                 <span>
                   <img src={bootstrap_icon} className={style.icon} />
                 </span>{' '}
@@ -117,17 +127,10 @@ function App() {
                   {' '}
                   <img src={tailwind_icon} className={style.icon} />
                 </span>{' '}
-                Tailwind CSS
+                Tailwind CSS to help me handle UI / UX and responsive design
               </p>
               <p>
-                I also love using{' '}
-                <span>
-                  <img src={vue_icon} className={style.icon} />
-                </span>{' '}
-                Vue.js
-              </p>
-              <p>
-                I have a backend background as well, with{' '}
+                I also have a backend background, with{' '}
                 <span>
                   <img
                     src={THEME[themeMode].symfony_icon}
@@ -145,11 +148,6 @@ function App() {
                 </span>{' '}
                 Node.js / Express
               </p>
-              <p className='my-4'>
-                I'm also interested in UI / UX because I want to make sure my
-                projects are « user friendly »
-              </p>
-              <p>🐵</p>
             </div>
             <hr />
             <div className={style.social}>
