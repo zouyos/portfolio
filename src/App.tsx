@@ -130,7 +130,7 @@ function App() {
                 Tailwind CSS to help me handle UI / UX and responsive design
               </p>
               <p>
-                I also have a backend background, with{' '}
+                I also have a backend background with{' '}
                 <span>
                   <img
                     src={THEME[themeMode].symfony_icon}
