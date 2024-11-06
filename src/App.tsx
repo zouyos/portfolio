@@ -5,6 +5,7 @@ import vue_icon from './assets/img/vue-icon.png';
 import spring_icon from './assets/img/spring-icon.png';
 import node_icon from './assets/img/node-icon.png';
 import tailwind_icon from './assets/img/tailwind-icon.png';
+import ts_icon from './assets/img/ts-icon.png';
 import style from './style.module.css';
 import ProjectList from './components/ProjectList/ProjectList';
 import { projects } from '../data';
@@ -101,28 +102,32 @@ function App() {
                 </span>{' '}
                 React,{' '}
                 <span>
+                  <img src={ts_icon} className={style.icon} />
+                </span>{' '}
+                TypeScript and{' '}
+                <span>
                   <img src={redux_icon} className={style.icon} />
                 </span>{' '}
-                Redux and
+                Redux, and I often use{' '}
                 <span>
-                  {' '}
                   <img src={bootstrap_icon} className={style.icon} />
                 </span>{' '}
-                Bootstrap
+                Boostsrap or
+                <span>
+                  {' '}
+                  <img src={tailwind_icon} className={style.icon} />
+                </span>{' '}
+                Tailwind CSS
               </p>
               <p>
-                I love using{' '}
+                I also love using{' '}
                 <span>
                   <img src={vue_icon} className={style.icon} />
                 </span>{' '}
-                Vue.js as well and I can work with{' '}
-                <span>
-                  <img src={tailwind_icon} className={style.icon} />
-                </span>{' '}
-                Tailwind CSS if needed
+                Vue.js
               </p>
               <p>
-                I also have a backend background with{' '}
+                I have a backend background as well, with{' '}
                 <span>
                   <img
                     src={THEME[themeMode].symfony_icon}
@@ -138,7 +143,7 @@ function App() {
                 <span>
                   <img src={node_icon} className={style.icon} />
                 </span>{' '}
-                Node.js/Express
+                Node.js / Express
               </p>
               <p className='my-4'>
                 I'm also interested in UI / UX because I want to make sure my
