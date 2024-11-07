@@ -118,7 +118,7 @@ function App() {
                 Vue.js as well
               </p>
               <p>
-                Most of my front-end projects use libraries like{' '}
+                Most of my projects use libraries like{' '}
                 <span>
                   <img src={bootstrap_icon} className={style.icon} />
                 </span>{' '}
@@ -148,6 +148,8 @@ function App() {
                 </span>{' '}
                 Node.js / Express
               </p>
+              <p>But my main goal is to make user-friendly client-side apps</p>
+              <p>🐵</p>
             </div>
             <hr />
             <div className={style.social}>
