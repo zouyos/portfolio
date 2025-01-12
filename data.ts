@@ -180,7 +180,7 @@ export const projects: Project[] = [
       'Street Fighter mini game developed with React that consists in a Rock Paper Cissors game.\nThe player has to choose a symbol and the opponent will randomly play another symbol.\nIf you win the opponent loses 20 HP, if you lose you also lose 20 HP, and so on. UI/UX is made with Bootstrap',
     techs: [techs.react, techs.ts, techs.bootstrap],
     image: sfrps,
-    visit_link: 'https://street-fighter-sf.vercel.app/',
+    visit_link: 'https://street-fighter-rps.vercel.app/',
     github_link: 'https://github.com/zouyos/street_fighter_rps.git',
     created_at: new Date('2025-01'),
   },
