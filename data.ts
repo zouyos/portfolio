@@ -16,7 +16,6 @@ import thymeleaf_icon from './src/assets/img/thymeleaf-icon.png';
 import twig_icon from './src/assets/img/twig-icon.png';
 import sass_icon from './src/assets/img/sass-icon.png';
 import js_icon from './src/assets/img/js-icon.png';
-import ts_icon from './src/assets/img/ts-icon.png';
 import { Project } from './src/types/types';
 
 const techs = {
@@ -26,12 +25,6 @@ const techs = {
       icon_light: react_icon_dark,
     },
     name: 'React',
-  },
-  ts: {
-    icon: {
-      icon_dark: ts_icon,
-    },
-    name: 'TypeScript',
   },
   redux: {
     icon: {
@@ -162,7 +155,7 @@ export const projects: Project[] = [
     short_description: 'Note manager developed with React and Express.js',
     description:
       'This application allows the user to create and manage notes within an intuitive interface.\nThe frontend is coded with React and Redux.\nThe backend is coded with Node.js/Express and is linked to a MongoDB database.\nIt handles authentification, password reset and user notes are encrypted when stored in the database.',
-    techs: [techs.node, techs.react, techs.ts, techs.redux, techs.bootstrap],
+    techs: [techs.node, techs.react, techs.redux, techs.bootstrap],
     image: notomatic,
     visit_link: 'https://notomatic-note-manager.vercel.app/',
     github: {
