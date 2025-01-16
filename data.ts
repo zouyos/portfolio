@@ -4,7 +4,7 @@ import ispent from './src/assets/img/ispent.png';
 import watowatch from './src/assets/img/watowatch.png';
 import NB from './src/assets/img/NB.png';
 import planexam from './src/assets/img/planexam.png';
-import sfrps from './src/assets/img/sf_rps.png';
+import sfrps from './src/assets/img/street_fighter_rps.png';
 import react_icon from './src/assets/img/react-icon.png';
 import react_icon_dark from './src/assets/img/react-icon-dark.png';
 import redux_icon from './src/assets/img/redux-icon.png';
