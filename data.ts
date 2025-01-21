@@ -177,7 +177,7 @@ export const projects: Project[] = [
     name: "Street Fighter RPS",
     short_description: 'Street Fighter fan game developed with React and TypeScript',
     description:
-      'Street Fighter mini game developed with React that consists in a Rock Paper Cissors game.\nThe player has to choose a symbol and the opponent will randomly play another symbol.\nIf you win the opponent loses 20 HP, if you lose you also lose 20 HP, and so on. UI/UX is made with Bootstrap',
+      'Rock Paper Cissors mini game developed with React and TypeScript. I consists in a Rock Paper Cissors game.\nThe player chooses a symbol and the opponent will randomly play another symbol.\nAnimations are made by dynamically looping over frames.\nUI/UX is made with Bootstrap',
     techs: [techs.react, techs.ts, techs.bootstrap],
     image: sfrps,
     visit_link: 'https://street-fighter-rps.vercel.app/',
