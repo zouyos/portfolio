@@ -174,7 +174,7 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    name: "Street Fighter RPS",
+    name: "Street Fighter RPS (WIP)",
     short_description: 'Street Fighter fan game developed with React and TypeScript',
     description:
       'Rock Paper Cissors mini game developed with React and TypeScript.\nThe player has to choose a symbol and the opponent will randomly play another symbol.\nAnimations are made by dynamically looping over frames.\nUI/UX is made with Bootstrap',
