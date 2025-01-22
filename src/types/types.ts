@@ -20,6 +20,7 @@ type Project = {
       back: string,
     },
     created_at: Date,
+    version: string
   }
 
 type ThemeMode = 'light' | 'dark';

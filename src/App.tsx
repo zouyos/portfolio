@@ -274,6 +274,15 @@ function App() {
                       )}
                   </span>
                 </p>
+                <p className='text-lg mb-2'>
+                  Version:
+                  <span
+                    className='para text-base'
+                    style={{ color: THEME[themeMode].secondaryColor }}
+                  >
+                    {' ' + selectedProject.version}
+                  </span>
+                </p>
               </div>
             )}
           </div>

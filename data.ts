@@ -104,6 +104,7 @@ export const projects: Project[] = [
     visit_link: 'https://watowatch-tv-show-advisor.vercel.app/',
     github_link: 'https://github.com/zouyos/tv-show-advisor',
     created_at: new Date('2022-12'),
+    version: '1.2.1'
   },
   {
     id: 2,
@@ -121,6 +122,7 @@ export const projects: Project[] = [
     visit_link: 'https://ispent-expense-tracker.vercel.app/',
     github_link: 'https://github.com/zouyos/expense-tracker',
     created_at: new Date('2023-06'),
+    version: '1.3.4'
   },
   {
     id: 3,
@@ -133,6 +135,7 @@ export const projects: Project[] = [
     image: NB,
     github_link: 'https://github.com/zouyos/nb-facialiste',
     created_at: new Date('2023-01'),
+    version: '1.4.19'
   },
   {
     id: 4,
@@ -144,6 +147,7 @@ export const projects: Project[] = [
     image: planexam,
     github_link: 'https://github.com/zouyos/planexam',
     created_at: new Date('2024-01'),
+    version: '2.0.3'
   },
   {
     id: 5,
@@ -156,6 +160,7 @@ export const projects: Project[] = [
     visit_link: 'https://poke-decks-game.vercel.app/',
     github_link: 'https://github.com/zouyos/poke-decks',
     created_at: new Date('2023-11'),
+    version: '1.5.0'
   },
   {
     id: 6,
@@ -171,6 +176,7 @@ export const projects: Project[] = [
       back: 'https://github.com/zouyos/notomatic-api-node',
     },
     created_at: new Date('2024-03'),
+    version: '1.4.7'
   },
   {
     id: 7,
@@ -183,5 +189,6 @@ export const projects: Project[] = [
     visit_link: 'https://street-fighter-rps.vercel.app/',
     github_link: 'https://github.com/zouyos/street_fighter_rps.git',
     created_at: new Date('2025-01'),
+    version: '1.6.23'
   },
 ];
