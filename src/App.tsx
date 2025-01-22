@@ -138,7 +138,7 @@ function App() {
                 <span>
                   <img src={node_icon} className={style.icon} />
                 </span>{' '}
-                Node.js/Express
+                Node.js Express
               </p>
               <p className='my-4'>
                 I'm also interested in UI / UX because I want to make sure my
