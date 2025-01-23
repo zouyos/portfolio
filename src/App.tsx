@@ -1,4 +1,5 @@
 import Avatar from './components/Avatar/Avatar';
+import ts_icon from './assets/img/ts-icon.png';
 import redux_icon from './assets/img/redux-icon.png';
 import bootstrap_icon from './assets/img/bootstrap-icon.png';
 import vue_icon from './assets/img/vue-icon.png';
@@ -101,9 +102,13 @@ function App() {
                 </span>{' '}
                 React,{' '}
                 <span>
+                  <img src={ts_icon} className={style.icon} />
+                </span>{' '}
+                TypeScript,{' '}
+                <span>
                   <img src={redux_icon} className={style.icon} />
                 </span>{' '}
-                Redux and
+                and
                 <span>
                   {' '}
                   <img src={bootstrap_icon} className={style.icon} />
