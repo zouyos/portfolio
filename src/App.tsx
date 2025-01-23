@@ -107,10 +107,9 @@ function App() {
                 TypeScript,{' '}
                 <span>
                   <img src={redux_icon} className={style.icon} />
-                </span>
-                Redux and
+                </span>{' '}
+                Redux and{' '}
                 <span>
-                  {' '}
                   <img src={bootstrap_icon} className={style.icon} />
                 </span>{' '}
                 Bootstrap
