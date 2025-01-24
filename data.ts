@@ -189,6 +189,6 @@ export const projects: Project[] = [
     visit_link: 'https://street-fighter-rps.vercel.app/',
     github_link: 'https://github.com/zouyos/street_fighter_rps.git',
     created_at: new Date('2025-01'),
-    version: '1.7.23'
+    version: '1.9.25'
   },
 ];
