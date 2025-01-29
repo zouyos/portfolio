@@ -190,7 +190,7 @@ function App() {
             <hr />
             {projects.length > 0 && (
               <ProjectList
-                projects={sortedProjects}
+                projects={projects}
                 selectedProject={selectedProject}
                 onClick={handleProjectClick}
               />
