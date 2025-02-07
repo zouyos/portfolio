@@ -21,6 +21,9 @@ function App() {
   const { themeMode, setThemeMode } = useThemeModeContext();
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const sortedProjects = [...projects].sort((a: Project, b: Project) => {
+    return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+  });
 
   function handleProjectClick(project: Project | null) {
     setSelectedProject(project);
@@ -190,7 +193,7 @@ function App() {
             <hr />
             {projects.length > 0 && (
               <ProjectList
-                projects={projects}
+                projects={sortedProjects}
                 selectedProject={selectedProject}
                 onClick={handleProjectClick}
               />
