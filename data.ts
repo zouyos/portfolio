@@ -5,6 +5,7 @@ import watowatch from './src/assets/img/watowatch.png';
 import NB from './src/assets/img/NB.png';
 import planexam from './src/assets/img/planexam.png';
 import sfrps from './src/assets/img/sf_rps.png';
+import hyrule_castle from './src/assets/img/hyrule-castle.png';
 import react_icon from './src/assets/img/react-icon.png';
 import react_icon_dark from './src/assets/img/react-icon-dark.png';
 import redux_icon from './src/assets/img/redux-icon.png';
@@ -180,10 +181,22 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    name: "Street Fighter RPS",
-    short_description: 'Street Fighter fan game developed with React/TS (better on mobile devices)',
+    name: "Hyrule Castle",
+    short_description: 'Terminal RPG made with TypeScript (WIP)',
     description:
-      'Rock Paper Cissors mini game developed with React and TypeScript.\nThe player has to choose a symbol and the opponent will randomly play another symbol.\nAnimations are made by dynamically looping over frames.\nUI/UX is made with Bootstrap',
+      'Terminal Role Playing Game, which served as a test for my application to a Master\'s degree.\nIt is made with TypeScript and features good algorithmic logic (Work In Progress).\nHow to play:\n- Go to GitHub page\n- Git clone project\n\- Go to folder, open a terminal and write:\n```\nnpm i\nnpx tsc src/main.ts --resolveJsonModule\nnode src/main.js\n\```',
+    techs: [techs.ts],
+    image: hyrule_castle,
+    github_link: 'https://github.com/zouyos/hyrule_castle',
+    created_at: new Date('2024-10'),
+    version: '1.3.0'
+  },
+  {
+    id: 8,
+    name: "Street Fighter RPS",
+    short_description: 'Street Fighter fan game developed with React and TypeScript (WIP)',
+    description:
+      'Rock Paper Cissors mini game developed with React and TypeScript.\nThe player has to choose a symbol and the opponent will randomly play another symbol.\nAnimations are made by dynamically looping over frames.\nUI/UX is made with Bootstrap.\n(Better on mobile devices)',
     techs: [techs.react, techs.ts, techs.bootstrap],
     image: sfrps,
     visit_link: 'https://street-fighter-rps.vercel.app/',
