@@ -181,18 +181,6 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    name: "Hyrule Castle",
-    short_description: 'Terminal RPG made with TypeScript (WIP)',
-    description:
-      'Terminal Role Playing Game, which served as a test for my application to a Master\'s degree.\nIt is made with TypeScript and features good algorithmic logic (Work In Progress).\nHow to play:\n- Go to GitHub page\n- Git clone project\n\- Go to folder, open a terminal and write:\n```\nnpm i\nnpx tsc src/main.ts --resolveJsonModule\nnode src/main.js\n\```',
-    techs: [techs.ts],
-    image: hyrule_castle,
-    github_link: 'https://github.com/zouyos/hyrule_castle',
-    created_at: new Date('2024-10'),
-    version: '1.3.0'
-  },
-  {
-    id: 8,
     name: "Street Fighter RPS",
     short_description: 'Street Fighter fan game developed with React and TypeScript (WIP)',
     description:
