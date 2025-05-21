@@ -180,7 +180,7 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    name: "Client Portfolio Example",
+    name: "Client Portfolio (WIP)",
     short_description: 'Portfolio for a client developed with React/TS',
     description:
       'This app contains a Contact form without needing a backend (emailjs library).\nIt also provides a theme mode feature made with React contexts.',
