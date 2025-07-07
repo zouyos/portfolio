@@ -4,7 +4,8 @@ import ispent from './src/assets/img/ispent.png';
 import watowatch from './src/assets/img/watowatch.png';
 import NB from './src/assets/img/NB.png';
 import planexam from './src/assets/img/planexam.png';
-import portfolio from './src/assets/img/portfolio.png';
+import sfrps from './src/assets/img/sf_rps.png';
+// import portfolio from './src/assets/img/portfolio.png';
 import react_icon from './src/assets/img/react-icon.png';
 import react_icon_dark from './src/assets/img/react-icon-dark.png';
 import redux_icon from './src/assets/img/redux-icon.png';
@@ -178,8 +179,21 @@ export const projects: Project[] = [
     created_at: new Date('2024-03'),
     version: '1.4.7'
   },
+  {
+    id: 7,
+    name: "Street Fighter RPS",
+    short_description: 'Street Fighter fan game developed with React and TypeScript (WIP)',
+    description:
+      'Rock Paper Cissors mini game developed with React and TypeScript.\nThe player has to choose a symbol and the opponent will randomly play another symbol.\nAnimations are made by dynamically looping over frames.\nUI/UX is made with Bootstrap.\n(Better on mobile devices)',
+    techs: [techs.react, techs.ts, techs.bootstrap],
+    image: sfrps,
+    visit_link: 'https://street-fighter-rps.vercel.app/',
+    github_link: 'https://github.com/zouyos/street_fighter_rps.git',
+    created_at: new Date('2025-01'),
+    version: '1.11.0'
+  },
   // {
-  //   id: 7,
+  //   id: 8,
   //   name: "Client Portfolio (WIP)",
   //   short_description: 'Portfolio for a client developed with React/TS',
   //   description:
