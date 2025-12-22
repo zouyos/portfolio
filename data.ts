@@ -173,7 +173,7 @@ export const projects: Project[] = [
     image: portfolio,
     visit_link: 'https://assia-rochat.vercel.app/',
     github_link: 'https://github.com/zouyos/portfolio-assia-rochat',
-    created_at: new Date('2025-04'),
+    created_at: new Date('2024-08'),
     version: '1.2.0'
   },
   {
@@ -189,7 +189,7 @@ export const projects: Project[] = [
       front: 'https://github.com/zouyos/notomatic',
       back: 'https://github.com/zouyos/notomatic-api-node',
     },
-    created_at: new Date('2024-03'),
+    created_at: new Date('2025-04'),
     version: '1.4.7'
   },
   // {
