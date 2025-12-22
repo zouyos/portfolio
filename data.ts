@@ -165,6 +165,19 @@ export const projects: Project[] = [
   },
   {
     id: 6,
+    name: "Client Portfolio (WIP)",
+    short_description: 'Portfolio for a client developed with React/TS',
+    description:
+      'This app contains a Contact form without needing a backend (emailjs library).\nIt also provides a theme mode feature made with React contexts.',
+    techs: [techs.react, techs.ts, techs.bootstrap, { name: 'Email JS' }],
+    image: portfolio,
+    visit_link: 'https://assia-rochat.vercel.app/',
+    github_link: 'https://github.com/zouyos/portfolio-assia-rochat',
+    created_at: new Date('2025-04'),
+    version: '1.2.0'
+  },
+  {
+    id: 7,
     name: 'Notomatic',
     short_description: 'Note manager developed with React/TS and Express.js',
     description:
@@ -179,21 +192,8 @@ export const projects: Project[] = [
     created_at: new Date('2024-03'),
     version: '1.4.7'
   },
-    {
-    id: 7,
-    name: "Client Portfolio (WIP)",
-    short_description: 'Portfolio for a client developed with React/TS',
-    description:
-      'This app contains a Contact form without needing a backend (emailjs library).\nIt also provides a theme mode feature made with React contexts.',
-    techs: [techs.react, techs.ts, techs.bootstrap, { name: 'Email JS' }],
-    image: portfolio,
-    visit_link: 'https://assia-rochat.vercel.app/',
-    github_link: 'https://github.com/zouyos/portfolio-assia-rochat',
-    created_at: new Date('2025-04'),
-    version: '1.2.0'
-  },
   // {
-  //   id: 7,
+  //   id: 8,
   //   name: "Street Fighter RPS",
   //   short_description: 'Street Fighter fan game developed with React and TypeScript (WIP)',
   //   description:
