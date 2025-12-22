@@ -5,7 +5,7 @@ import watowatch from './src/assets/img/watowatch.png';
 import NB from './src/assets/img/NB.png';
 import planexam from './src/assets/img/planexam.png';
 import sfrps from './src/assets/img/sf_rps.png';
-// import portfolio from './src/assets/img/portfolio.png';
+import portfolio from './src/assets/img/portfolio.png';
 import react_icon from './src/assets/img/react-icon.png';
 import react_icon_dark from './src/assets/img/react-icon-dark.png';
 import redux_icon from './src/assets/img/redux-icon.png';
@@ -179,30 +179,31 @@ export const projects: Project[] = [
     created_at: new Date('2024-03'),
     version: '1.4.7'
   },
-  {
+    {
     id: 7,
-    name: "Street Fighter RPS",
-    short_description: 'Street Fighter fan game developed with React and TypeScript (WIP)',
+    name: "Client Portfolio (WIP)",
+    short_description: 'Portfolio for a client developed with React/TS',
     description:
-      'Rock Paper Cissors mini game developed with React and TypeScript.\nThe player has to choose a symbol and the opponent will randomly play another symbol.\nAnimations are made by dynamically looping over frames.\nUI/UX is made with Bootstrap.\n(Better on mobile devices)',
-    techs: [techs.react, techs.ts, techs.bootstrap],
-    image: sfrps,
-    visit_link: 'https://street-fighter-rps.vercel.app/',
-    github_link: 'https://github.com/zouyos/street_fighter_rps.git',
-    created_at: new Date('2025-01'),
-    version: '1.11.0'
+      'This app contains a Contact form without needing a backend (emailjs library).\nIt also provides a theme mode feature made with React contexts.',
+    techs: [techs.react, techs.ts, techs.bootstrap, { name: 'Email JS' }],
+    image: portfolio,
+    visit_link: 'https://assia-rochat.vercel.app/',
+    github_link: 'https://github.com/zouyos/portfolio-assia-rochat',
+    created_at: new Date('2025-04'),
+    version: '1.2.0'
   },
   // {
-  //   id: 8,
-  //   name: "Client Portfolio (WIP)",
-  //   short_description: 'Portfolio for a client developed with React/TS',
+  //   id: 7,
+  //   name: "Street Fighter RPS",
+  //   short_description: 'Street Fighter fan game developed with React and TypeScript (WIP)',
   //   description:
-  //     'This app contains a Contact form without needing a backend (emailjs library).\nIt also provides a theme mode feature made with React contexts.',
-  //   techs: [techs.react, techs.ts, techs.bootstrap, { name: 'Email JS' }],
-  //   image: portfolio,
-  //   visit_link: 'https://assia-rochat.vercel.app/',
-  //   github_link: 'https://github.com/zouyos/portfolio-assia-rochat',
-  //   created_at: new Date('2025-04'),
-  //   version: '1.2.0'
+  //     'Rock Paper Cissors mini game developed with React and TypeScript.\nThe player has to choose a symbol and the opponent will randomly play another symbol.\nAnimations are made by dynamically looping over frames.\nUI/UX is made with Bootstrap.\n(Better on mobile devices)',
+  //   techs: [techs.react, techs.ts, techs.bootstrap],
+  //   image: sfrps,
+  //   visit_link: 'https://street-fighter-rps.vercel.app/',
+  //   github_link: 'https://github.com/zouyos/street_fighter_rps.git',
+  //   created_at: new Date('2025-01'),
+  //   version: '1.11.0'
   // },
+
 ];
