@@ -22,7 +22,7 @@ function App() {
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const sortedProjects = [...projects].sort((a: Project, b: Project) => {
-    return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+    return new Date(a.created_at).getTime() - new Date(b.created_at).getTime();
   });
 
   function handleProjectClick(project: Project | null) {
@@ -250,8 +250,8 @@ function App() {
                               themeMode === 'dark'
                                 ? tech.icon.icon_dark
                                 : tech.icon.icon_light
-                                ? tech.icon.icon_light
-                                : tech.icon.icon_dark
+                                  ? tech.icon.icon_light
+                                  : tech.icon.icon_dark
                             }
                             className={`${style.icon} me-1 my-1`}
                           />
@@ -274,7 +274,7 @@ function App() {
                     {' ' +
                       new Date(selectedProject.created_at).toLocaleString(
                         'en-US',
-                        { month: 'long', year: 'numeric' }
+                        { month: 'long', year: 'numeric' },
                       )}
                   </span>
                 </p>

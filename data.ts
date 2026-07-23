@@ -2,10 +2,6 @@ import notomatic from './src/assets/img/notomatic.png';
 import pokedecks from './src/assets/img/pokedecks.png';
 import ispent from './src/assets/img/ispent.png';
 import watowatch from './src/assets/img/watowatch.png';
-import NB from './src/assets/img/NB.png';
-import planexam from './src/assets/img/planexam.png';
-import sfrps from './src/assets/img/sf_rps.png';
-import portfolio from './src/assets/img/portfolio.png';
 import react_icon from './src/assets/img/react-icon.png';
 import react_icon_dark from './src/assets/img/react-icon-dark.png';
 import redux_icon from './src/assets/img/redux-icon.png';
@@ -127,31 +123,6 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    name: 'NB Facialiste',
-    short_description:
-      'Web application for a showcase site developed with Symfony',
-    description:
-      "This application was made for a client while I was self-employed, it informs the user about my client's business and provides a contact form, authentification and mailing feature.\nThe administrator has access to a « Back Office » where they can manage the data, like articles or appointments.\nSymfony is used as a backend language, to create and access data from a database (CRUD)\nThis project follows the MVC pattern, that emphasizes a separation between the software's logic and the display.\nTwig is used as the template engine.",
-    techs: [techs.symfony, techs.twig, techs.sass, techs.bootstrap],
-    image: NB,
-    github_link: 'https://github.com/zouyos/nb-facialiste',
-    created_at: new Date('2023-01'),
-    version: '1.4.19'
-  },
-  {
-    id: 4,
-    name: 'PlanExam',
-    short_description: 'Final project of my bachelor degree exam',
-    description:
-      'The idea of this project was to facilitate the organization of a french IT diploma’s exam, by sharing out teachers in exam centers.\nIt contains a CSV file import and reading feature.\nThe project follows the MVC pattern.\nI used UML (Unified Modeling Language) that is intended to provide a standard way to visualize the design of a system.\nThe main language is Java and its framework Spring Boot.\nI also used vanilla JS to dynamically call the database when clicking checkboxes.\nThe template engine used is Thymeleaf.',
-    techs: [techs.spring_boot_icon, techs.thymeleaf, techs.js, techs.bootstrap],
-    image: planexam,
-    github_link: 'https://github.com/zouyos/planexam',
-    created_at: new Date('2024-01'),
-    version: '2.0.3'
-  },
-  {
-    id: 5,
     name: "Poke'Decks",
     short_description: 'Pokemon fan game developed with React and Custom Hooks',
     description:
@@ -160,24 +131,11 @@ export const projects: Project[] = [
     image: pokedecks,
     visit_link: 'https://poke-decks-game.vercel.app/',
     github_link: 'https://github.com/zouyos/poke-decks',
-    created_at: new Date('2023-11'),
+    created_at: new Date('2024-03'),
     version: '1.5.0'
   },
   {
-    id: 6,
-    name: "Client Portfolio (WIP)",
-    short_description: 'Portfolio for a client developed with React/TS',
-    description:
-      'This app contains a Contact form without needing a backend (emailjs library).\nIt also provides a theme mode feature made with React contexts.',
-    techs: [techs.react, techs.ts, techs.bootstrap, { name: 'Email JS' }],
-    image: portfolio,
-    visit_link: 'https://assia-rochat.vercel.app/',
-    github_link: 'https://github.com/zouyos/portfolio-assia-rochat',
-    created_at: new Date('2024-08'),
-    version: '1.2.0'
-  },
-  {
-    id: 7,
+    id: 4,
     name: 'Notomatic',
     short_description: 'Note manager developed with React/TS and Express.js',
     description:
@@ -189,21 +147,7 @@ export const projects: Project[] = [
       front: 'https://github.com/zouyos/notomatic',
       back: 'https://github.com/zouyos/notomatic-api-node',
     },
-    created_at: new Date('2025-04'),
+    created_at: new Date('2024-08'),
     version: '1.4.7'
   },
-  // {
-  //   id: 8,
-  //   name: "Street Fighter RPS",
-  //   short_description: 'Street Fighter fan game developed with React and TypeScript (WIP)',
-  //   description:
-  //     'Rock Paper Cissors mini game developed with React and TypeScript.\nThe player has to choose a symbol and the opponent will randomly play another symbol.\nAnimations are made by dynamically looping over frames.\nUI/UX is made with Bootstrap.\n(Better on mobile devices)',
-  //   techs: [techs.react, techs.ts, techs.bootstrap],
-  //   image: sfrps,
-  //   visit_link: 'https://street-fighter-rps.vercel.app/',
-  //   github_link: 'https://github.com/zouyos/street_fighter_rps.git',
-  //   created_at: new Date('2025-01'),
-  //   version: '1.11.0'
-  // },
-
 ];
