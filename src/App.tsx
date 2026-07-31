@@ -172,7 +172,7 @@ function App() {
                   />
                 </a>
                 <a
-                  href='https://open.spotify.com/playlist/4Fz42bWhRwY8x1bamck92q?si=ceb09f154d554b54'
+                  href='https://open.spotify.com/playlist/37i9dQZF1DX0AMssoUKCz7?si=z-b6KZL6RrWASwTgF1q68w'
                   target='__blank'
                   className='mx-2'
                 >
