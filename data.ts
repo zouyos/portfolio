@@ -93,9 +93,9 @@ export const projects: Project[] = [
     id: 1,
     name: 'Watowatch',
     short_description:
-      'TV show advisor developed with React and using TMDB API',
+      'TV show advisor developed with React and using TMDb API',
     description:
-      'The application allows the user to search a TV show within « The Movie Database ».\nBy default, the displayed show is the most popular in your living area.\nUnit tests are added with Jest and react-testing library.\nBootstrap helps dealing with CSS classes and provides ready-to-use components.',
+      "The application allows users to search for TV show details from The Movie Database (TMDb).\nIt displays the most popular TV show in the user's region by default.\nUnit tests are implemented with Jest.\nBootstrap is used for responsive layouts and ready-to-use UI components.",
     techs: [techs.react, techs.bootstrap],
     image: watowatch,
     visit_link: 'https://watowatch-tv-show-advisor.vercel.app/',
@@ -124,9 +124,9 @@ export const projects: Project[] = [
   {
     id: 3,
     name: "Poke'Decks",
-    short_description: 'Pokemon fan game developed with React and Custom Hooks',
+    short_description: 'Game developed with React and Custom Hooks',
     description:
-      "Mini game that uses a public API to retreive data and consists in a random lottery of collectable pokemons.\nA Pokemon's spawn rate is determined in the code by its rarity.\nIt uses custom hooks like « useLocalStorage » for browser persitence and « useScrollPosition » to display useful scroll buttons, especially on mobile devices.",
+      "A collectible Pokemon mini-game featuring a rarity-based lottery system.\nIt uses custom hooks such as useLocalStorage for data persistence and useScrollPosition to improve navigation, especially on mobile devices.",
     techs: [techs.react, { name: 'Custom Hooks' }, techs.bootstrap],
     image: pokedecks,
     visit_link: 'https://poke-decks-game.vercel.app/',
