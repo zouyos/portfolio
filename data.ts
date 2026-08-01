@@ -93,9 +93,9 @@ export const projects: Project[] = [
     id: 1,
     name: 'Watowatch',
     short_description:
-      'TV show advisor developed with React and using TMDb API',
+      'TV show advisor',
     description:
-      "The application allows users to search for TV show details from The Movie Database (TMDb).\nIt displays the most popular TV show in the user's region by default.\nUnit tests are implemented with Jest.\nBootstrap is used for responsive layouts and ready-to-use UI components.",
+      "Search for TV show information using The Movie Database (TMDb) API.\nThe most popular TV show in the user's region is displayed by default.\nBootstrap is used for responsive layouts and ready-to-use UI components.",
     techs: [techs.react, techs.bootstrap],
     image: watowatch,
     visit_link: 'https://watowatch-tv-show-advisor.vercel.app/',
@@ -106,9 +106,9 @@ export const projects: Project[] = [
   {
     id: 2,
     name: 'ISpent',
-    short_description: 'Expense tracker developed with React and Redux',
+    short_description: 'Expense tracker',
     description:
-      "This application helps the user manage their budget by setting an income and a list of expenses.\nIt uses Redux library that helps centralizing the application's state and logic, making it easy to debug.\nRedux Persist library provides state persitence.\nUnit tests are added.",
+      "The application helps the user manage their budget by setting an income and a list of expenses.\nIt uses Redux library that helps centralizing the application's state and logic, making it easy to debug.\nRedux Persist library provides state persitence.\nUnit tests are added.",
     techs: [
       techs.react,
       techs.redux,
@@ -124,9 +124,9 @@ export const projects: Project[] = [
   {
     id: 3,
     name: "Poke'Decks",
-    short_description: 'Game developed with React and Custom Hooks',
+    short_description: 'Lottery mini-game',
     description:
-      "A collectible Pokemon mini-game featuring a rarity-based lottery system.\nIt uses custom hooks such as useLocalStorage for data persistence and useScrollPosition to improve navigation, especially on mobile devices.",
+      "A collectible Pokemon game featuring a rarity-based lottery system.\nIt uses custom hooks such as useLocalStorage for data persistence and useScrollPosition to improve navigation, especially on mobile devices.",
     techs: [techs.react, { name: 'Custom Hooks' }, techs.bootstrap],
     image: pokedecks,
     visit_link: 'https://poke-decks-game.vercel.app/',
@@ -137,7 +137,7 @@ export const projects: Project[] = [
   {
     id: 4,
     name: 'Notomatic',
-    short_description: 'Note manager developed with React/TS and Express.js',
+    short_description: 'Note manager',
     description:
       'This application allows the user to create and manage notes within an intuitive interface.\nThe frontend is coded with React and Redux, while the backend is coded with Node.js/Express and linked to a MongoDB database.\nIt handles authentification, password reset and user notes are encrypted when stored in the database.',
     techs: [techs.node, techs.react, techs.ts, techs.redux, techs.bootstrap],
