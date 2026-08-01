@@ -95,7 +95,7 @@ export const projects: Project[] = [
     short_description:
       'TV show advisor developed with React and using TMDB API',
     description:
-      'Based on « The Movie Database » API endpoint listing trending TV shows, this application displays details about the most watched TV show.\nA list of related recommendations is provided, loading details about the selected show when clicked.\nThe application also allows the user to search a TV show within TMDB.\nUnit tests are added with Jest and react-testing library.\nBootstrap is a library that helps developer deal with CSS classes and provides ready-to-use components.',
+      'The application allows the user to search a TV show within « The Movie Database ».\nBy default, the displayed show is the most popular in your living area.\nUnit tests are added with Jest and react-testing library.\nBootstrap helps dealing with CSS classes and provides ready-to-use components.',
     techs: [techs.react, techs.bootstrap],
     image: watowatch,
     visit_link: 'https://watowatch-tv-show-advisor.vercel.app/',
@@ -108,7 +108,7 @@ export const projects: Project[] = [
     name: 'ISpent',
     short_description: 'Expense tracker developed with React and Redux',
     description:
-      "This application helps the user manage their budget by setting an income and a list of expenses.\nIt uses Redux library that helps centralizing the application's state and logic, making it easy to test or debug.\nRedux Persist library provides state persitence.\nUnit tests are added with Jest and react-testing library.",
+      "This application helps the user manage their budget by setting an income and a list of expenses.\nIt uses Redux library that helps centralizing the application's state and logic, making it easy to debug.\nRedux Persist library provides state persitence.\nUnit tests are added.",
     techs: [
       techs.react,
       techs.redux,
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     name: "Poke'Decks",
     short_description: 'Pokemon fan game developed with React and Custom Hooks',
     description:
-      'Pokemon mini game developed with React, this application uses a public API to retreive data and consists in a random lottery of collectable pokemons.\nPokemons have different apparition rates.\nIt uses custom hooks like « useLocalStorage » for browser persitence and « useScrollPosition » to display useful scroll buttons, especially on mobile devices.',
+      "Mini game that uses a public API to retreive data and consists in a random lottery of collectable pokemons.\nA Pokemon's spawn rate is determined in the code by its rarity.\nIt uses custom hooks like « useLocalStorage » for browser persitence and « useScrollPosition » to display useful scroll buttons, especially on mobile devices.",
     techs: [techs.react, { name: 'Custom Hooks' }, techs.bootstrap],
     image: pokedecks,
     visit_link: 'https://poke-decks-game.vercel.app/',

@@ -1,10 +1,7 @@
 import Avatar from './components/Avatar/Avatar';
-import ts_icon from './assets/img/ts-icon.png';
 import redux_icon from './assets/img/redux-icon.png';
 import bootstrap_icon from './assets/img/bootstrap-icon.png';
 import vue_icon from './assets/img/vue-icon.png';
-import spring_icon from './assets/img/spring-icon.png';
-import node_icon from './assets/img/node-icon.png';
 import tailwind_icon from './assets/img/tailwind-icon.png';
 import style from './style.module.css';
 import ProjectList from './components/ProjectList/ProjectList';
@@ -89,8 +86,8 @@ function App() {
             <hr />
             <div className={`${style.description} leading-loose my-5`}>
               <p className='my-4'>
-                Hi I&apos;m Zouyos, a more-into-frontend fullstack developer,
-                holder of a bachelor level degree
+                Hi I&apos;m Zouyos, a frontend developer holder of a bachelor
+                level degree
               </p>
               <p className='my-4'>
                 I mainly work with{' '}
@@ -102,10 +99,6 @@ function App() {
                 </span>{' '}
                 React,{' '}
                 <span>
-                  <img src={ts_icon} className={style.icon} />
-                </span>{' '}
-                TypeScript,{' '}
-                <span>
                   <img src={redux_icon} className={style.icon} />
                 </span>{' '}
                 Redux and{' '}
@@ -114,7 +107,7 @@ function App() {
                 </span>{' '}
                 Bootstrap
               </p>
-              <p>
+              <p className='my-4'>
                 I love using{' '}
                 <span>
                   <img src={vue_icon} className={style.icon} />
@@ -125,60 +118,38 @@ function App() {
                 </span>{' '}
                 Tailwind CSS if needed
               </p>
-              <p>
-                I also have a backend background with{' '}
-                <span>
-                  <img
-                    src={THEME[themeMode].symfony_icon}
-                    className={style.icon}
-                  />
-                </span>{' '}
-                Symfony and{' '}
-                <span>
-                  <img src={spring_icon} className={style.icon} />
-                </span>{' '}
-                Spring Boot development, and recently I&apos;ve started coding
-                with{' '}
-                <span>
-                  <img src={node_icon} className={style.icon} />
-                </span>{' '}
-                Node.js Express
-              </p>
               <p className='my-4'>
-                I'm also interested in UI / UX because I want to make sure my
+                I'm also interested in UI / UX and I always make sure my
                 projects are « user friendly »
               </p>
               <p>🐵</p>
             </div>
             <hr />
             <div className={style.social}>
-              <p className='mb-3 font-semibold text-2xl'>Social</p>
-              <div className='flex justify-center items-center'>
-                <a
-                  href='https://www.linkedin.com/in/hamza-benketaf/'
-                  target='__blank'
-                  className='mx-2'
-                >
-                  <img src={linkedin_icon} className={style.icon} />
-                </a>
-                <a
-                  href='https://github.com/zouyos'
-                  target='__blank'
-                  className='mx-2'
-                >
-                  <img
-                    src={THEME[themeMode].github_icon}
-                    className={style.icon}
-                  />
-                </a>
-                <a
-                  href='https://open.spotify.com/playlist/37i9dQZF1DX0AMssoUKCz7?si=z-b6KZL6RrWASwTgF1q68w'
-                  target='__blank'
-                  className='mx-2'
-                >
-                  <img src={spotify_icon} className={style.icon} />
-                </a>
-              </div>
+              <a
+                href='https://github.com/zouyos'
+                target='__blank'
+                className='mx-2'
+              >
+                <img
+                  src={THEME[themeMode].github_icon}
+                  className={style.icon}
+                />
+              </a>
+              <a
+                href='https://www.linkedin.com/in/hamza-benketaf/'
+                target='__blank'
+                className='mx-2'
+              >
+                <img src={linkedin_icon} className={style.icon} />
+              </a>
+              <a
+                href='https://open.spotify.com/playlist/37i9dQZF1DX0AMssoUKCz7?si=z-b6KZL6RrWASwTgF1q68w'
+                target='__blank'
+                className='mx-2'
+              >
+                <img src={spotify_icon} className={style.icon} />
+              </a>
             </div>
           </div>
         </div>
