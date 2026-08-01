@@ -92,7 +92,7 @@ const ProjectItem = ({ project, onClick, isSelected }: ProjectItemProps) => {
         )}
         {project?.github && <DropDownButton onClick={handleLinkClick} />}
       </div>
-      <hr className='my-3' />
+      <hr className={`my-3 ${themeMode === 'light' ? style.hr : ''}`} />
       <div
         className='pb-0 text-semibold text-lg'
         style={{

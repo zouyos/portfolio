@@ -30,3 +30,9 @@
   height: 2rem;
   overflow: hidden;
 }
+
+.hr {
+  border: none;
+  height: 1px;
+  background-color: #333;
+}

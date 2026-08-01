@@ -1,5 +1,4 @@
 import Avatar from './components/Avatar/Avatar';
-import redux_icon from './assets/img/redux-icon.png';
 import bootstrap_icon from './assets/img/bootstrap-icon.png';
 import vue_icon from './assets/img/vue-icon.png';
 import tailwind_icon from './assets/img/tailwind-icon.png';
@@ -85,7 +84,7 @@ function App() {
             >
               JavaScript Developer
             </h2>
-            <hr />
+            <hr className={themeMode === 'light' ? style.hr : ''} />
             <div className={`${style.description} leading-loose my-5`}>
               <p className='my-4'>
                 Hi I&apos;m Zouyos, a frontend developer holder of a bachelor
@@ -99,11 +98,7 @@ function App() {
                     className={style.icon}
                   />
                 </span>{' '}
-                React,{' '}
-                <span>
-                  <img src={redux_icon} className={style.icon} />
-                </span>{' '}
-                Redux and{' '}
+                React and{' '}
                 <span>
                   <img src={bootstrap_icon} className={style.icon} />
                 </span>{' '}
@@ -140,7 +135,7 @@ function App() {
               </p>
               <p>🐵</p>
             </div>
-            <hr />
+            <hr className={themeMode === 'light' ? style.hr : ''} />
             <div className={style.social}>
               <a
                 href='https://github.com/zouyos'
@@ -177,7 +172,7 @@ function App() {
             }}
           >
             <h4 className='font-semibold text-2xl mb-3'>Projects</h4>
-            <hr />
+            <hr className={themeMode === 'light' ? style.hr : ''} />
             {projects.length > 0 && (
               <ProjectList
                 projects={sortedProjects}
@@ -193,7 +188,7 @@ function App() {
             }}
           >
             <p className='font-semibold text-2xl mb-3'>Description</p>
-            <hr />
+            <hr className={themeMode === 'light' ? style.hr : ''} />
             {selectedProject === null ? (
               <div
                 className='para text-center italic mt-8 mb-4'
@@ -278,7 +273,7 @@ function App() {
             )}
           </div>
           <div className={style.footer}>
-            <hr />
+            <hr className={themeMode === 'light' ? style.hr : ''} />
             <p className='text-xl mt-3 text-center'>Copyright © 2024 Zouyos</p>
           </div>
         </div>
