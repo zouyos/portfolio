@@ -108,7 +108,7 @@ export const projects: Project[] = [
     name: 'ISpent',
     short_description: 'Expense tracker',
     description:
-      "The application helps the user manage their budget by setting an income and a list of expenses.\nIt uses Redux library that helps centralizing the application's state and logic, making it easy to debug.\nRedux Persist library provides state persitence.\nUnit tests are added.",
+      "This application helps the user manage their budget by setting an income and a list of expenses.\nIt uses Redux library that helps centralizing the application's state and logic, making it easy to debug.\nRedux Persist library provides state persitence.\nUnit tests are added.",
     techs: [
       techs.react,
       techs.redux,
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     name: 'Notomatic',
     short_description: 'Note manager',
     description:
-      'This application allows the user to create and manage notes within an intuitive interface.\nThe frontend is coded with React and Redux, while the backend is coded with Node.js/Express and linked to a MongoDB database.\nIt handles authentification, password reset and user notes are encrypted when stored in the database.',
+      'This application allows the user to create and manage notes.\nThe frontend is decoupled from the backend, which is connected to a MongoDB database.\nIt handles authentification, password reset and user notes are encrypted when stored in the database.',
     techs: [techs.node, techs.react, techs.ts, techs.redux, techs.bootstrap],
     image: notomatic,
     visit_link: 'https://notomatic-note-manager.vercel.app/',

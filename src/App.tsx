@@ -3,6 +3,8 @@ import redux_icon from './assets/img/redux-icon.png';
 import bootstrap_icon from './assets/img/bootstrap-icon.png';
 import vue_icon from './assets/img/vue-icon.png';
 import tailwind_icon from './assets/img/tailwind-icon.png';
+import ts_icon from './assets/img/ts-icon.png';
+import node_icon from './assets/img/node-icon.png';
 import style from './style.module.css';
 import ProjectList from './components/ProjectList/ProjectList';
 import { projects } from '../data';
@@ -108,6 +110,13 @@ function App() {
                 Bootstrap
               </p>
               <p className='my-4'>
+                I have adopted{' '}
+                <span>
+                  <img src={ts_icon} className={style.icon} />
+                </span>{' '}
+                TypeScript for my recent projects
+              </p>
+              <p className='my-4'>
                 I love using{' '}
                 <span>
                   <img src={vue_icon} className={style.icon} />
@@ -117,6 +126,13 @@ function App() {
                   <img src={tailwind_icon} className={style.icon} />
                 </span>{' '}
                 Tailwind CSS if needed
+              </p>
+              <p className='my-4'>
+                Recently, I&apos;ve started exploring{' '}
+                <span>
+                  <img src={node_icon} className={style.icon} />
+                </span>{' '}
+                Node.js
               </p>
               <p className='my-4'>
                 I'm also interested in UI / UX and I always make sure my
