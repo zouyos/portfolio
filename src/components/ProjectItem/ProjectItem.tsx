@@ -57,14 +57,14 @@ const ProjectItem = ({ project, onClick, isSelected }: ProjectItemProps) => {
       <div className='flex justify-center mb-2'>
         <img src={project?.image} className={style.img} />
       </div>
-      <p
-        className='text-2xl'
+      <h4
+        className='text-2xl font-semibold'
         style={{
           color: THEME[themeMode].primaryColor,
         }}
       >
         {project?.name}
-      </p>
+      </h4>
       <p
         className={`para my-3 ${style.desc}`}
         style={{

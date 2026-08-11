@@ -1,3 +1,4 @@
+import ohanami from './src/assets/img/ohanami.png';
 import notomatic from './src/assets/img/notomatic.png';
 import pokedecks from './src/assets/img/pokedecks.png';
 import ispent from './src/assets/img/ispent.png';
@@ -7,13 +8,6 @@ import react_icon_dark from './src/assets/img/react-icon-dark.png';
 import redux_icon from './src/assets/img/redux-icon.png';
 import bootstrap_icon from './src/assets/img/bootstrap-icon.png';
 import node_icon from './src/assets/img/node-icon.png';
-import symfony_icon from './src/assets/img/symfony-icon.png';
-import symfony_icon_white from './src/assets/img/symfony-icon-white.png';
-import spring_boot_icon from './src/assets/img/spring-icon.png';
-import thymeleaf_icon from './src/assets/img/thymeleaf-icon.png';
-import twig_icon from './src/assets/img/twig-icon.png';
-import sass_icon from './src/assets/img/sass-icon.png';
-import js_icon from './src/assets/img/js-icon.png';
 import ts_icon from './src/assets/img/ts-icon.png';
 import { Project } from './src/types/types';
 
@@ -42,43 +36,6 @@ const techs = {
       icon_dark: bootstrap_icon,
     },
     name: 'Bootstrap',
-  },
-  symfony: {
-    icon: {
-      icon_dark: symfony_icon_white,
-      icon_light: symfony_icon,
-    },
-    name: 'Symfony',
-  },
-  twig: {
-    icon: {
-      icon_dark: twig_icon,
-    },
-    name: 'Twig',
-  },
-  sass: {
-    icon: {
-      icon_dark: sass_icon,
-    },
-    name: 'Sass',
-  },
-  spring_boot_icon: {
-    icon: {
-      icon_dark: spring_boot_icon,
-    },
-    name: 'Spring Boot',
-  },
-  thymeleaf: {
-    icon: {
-      icon_dark: thymeleaf_icon,
-    },
-    name: 'Thymeleaf',
-  },
-  js: {
-    icon: {
-      icon_dark: js_icon,
-    },
-    name: 'JavaScript',
   },
   node: {
     icon: {
@@ -149,5 +106,18 @@ export const projects: Project[] = [
     },
     created_at: new Date('2024-08'),
     version: '1.4.7'
+  },
+  {
+    id: 5,
+    name: 'Ohanami 🌸',
+    short_description: 'Online score sheet',
+    description:
+      'Helps calculate scores for the board game « Ohanami » through a user-friendly interface.',
+    techs: [techs.react, techs.ts, techs.bootstrap],
+    image: ohanami,
+    visit_link: 'https://ohanami-game.vercel.app/',
+    github_link:'https://github.com/zouyos/ohanami',
+    created_at: new Date('2024-08'),
+    version: '1.1.2'
   },
 ];

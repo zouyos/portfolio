@@ -171,7 +171,7 @@ function App() {
               backgroundColor: THEME[themeMode].secondaryBackgroundColor,
             }}
           >
-            <h4 className='font-semibold text-2xl mb-3'>Projects</h4>
+            <h3 className='font-semibold text-3xl mb-3'>Projects</h3>
             <hr className={themeMode === 'light' ? style.hr : ''} />
             {projects.length > 0 && (
               <ProjectList
@@ -187,7 +187,7 @@ function App() {
               backgroundColor: THEME[themeMode].primaryBackgroundColor,
             }}
           >
-            <p className='font-semibold text-2xl mb-3'>Description</p>
+            <h5 className='font-semibold text-2xl mb-3'>Description</h5>
             <hr className={themeMode === 'light' ? style.hr : ''} />
             {selectedProject === null ? (
               <div
