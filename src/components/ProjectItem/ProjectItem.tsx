@@ -58,7 +58,7 @@ const ProjectItem = ({ project, onClick, isSelected }: ProjectItemProps) => {
         <img src={project?.image} className={style.img} />
       </div>
       <h4
-        className='text-2xl font-semibold'
+        className='text-2xl'
         style={{
           color: THEME[themeMode].primaryColor,
         }}
