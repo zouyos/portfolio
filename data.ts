@@ -107,17 +107,4 @@ export const projects: Project[] = [
     created_at: new Date('2024-08'),
     version: '1.4.7'
   },
-  {
-    id: 5,
-    name: 'Ohanami 🌸',
-    short_description: 'Online score sheet',
-    description:
-      'Helps calculate scores for the board game « Ohanami » through a user-friendly interface.',
-    techs: [techs.react, techs.ts, techs.bootstrap],
-    image: ohanami,
-    visit_link: 'https://ohanami-game.vercel.app/',
-    github_link:'https://github.com/zouyos/ohanami',
-    created_at: new Date('2024-08'),
-    version: '1.1.2'
-  },
 ];
